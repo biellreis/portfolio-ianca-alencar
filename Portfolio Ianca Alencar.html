@@ -1,0 +1,3242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ianca Alencar — Gerente de Marketing Estratégico & Audiovisual</title>
+<meta name="description" content="Portfólio de marketing estratégico: crescimento orgânico, grandes eventos, direção audiovisual e fotografia — Super Ensino.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   HIGH-TIER FEMININE LUXURY DESIGN SYSTEM (Rose Gold, Silk Obsidian & Champagne)
+   ========================================================================== */
+:root {
+  /* Silk Obsidian & Caviar Plum Depth */
+  --bg-root: #0A080D;
+  --bg-surface: #130E1A;
+  --bg-card: rgba(28, 19, 36, 0.65);
+  --bg-card-hover: rgba(44, 29, 56, 0.88);
+  --bg-card-solid: #191222;
+  
+  /* Satin Glass & Rose Quartz Borders */
+  --border-glass: rgba(255, 182, 205, 0.12);
+  --border-glass-subtle: rgba(255, 182, 205, 0.06);
+  --border-glass-bright: rgba(255, 195, 215, 0.38);
+  --border-gold: rgba(247, 215, 181, 0.3);
+  
+  /* Pearl White & Rose Cashmere Typography */
+  --text-primary: #FAF6F8;
+  --text-secondary: #BCAAB8;
+  --text-tertiary: #83707F;
+  
+  /* Luxury Feminine Strategic Palette */
+  --accent-rose: #FF7A9E;           /* Vibrant Rose Quartz: Magnetic Connection & Emotion */
+  --accent-rose-soft: #FBBFD0;      /* Blush Silk: Welcoming, High-Tier Refinement */
+  --accent-rose-deep: #D6336C;      /* Imperial Crimson: Authority & Decisiveness */
+  --accent-rose-glow: rgba(255, 122, 158, 0.38);
+  
+  --accent-champagne: #F7D7B5;      /* Champagne Gold: Luxury, Prosperity & Prestige */
+  --accent-champagne-glow: rgba(247, 215, 181, 0.32);
+  
+  --accent-orchid: #C084FC;         /* Amethyst Orchid: Visionary Strategy & Depth */
+  --accent-orchid-glow: rgba(192, 132, 252, 0.32);
+  
+  --accent-berry: #F43F5E;          /* Radiant Berry: High Virality & Engagement */
+  --accent-cyan: #F472B6;           /* Harmonized TikTok Accent: Vibrant Rose Berry */
+  --accent-cyan-glow: rgba(244, 114, 182, 0.35);
+  
+  /* Font System - Apple SF Pro First (Slender & Elegant) */
+  --font-primary: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  
+  --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-root);
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-root);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent-rose);
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Base Wrapper */
+.wrap {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4.5vw, 64px);
+}
+
+/* ---------- Scroll Progress Bar ---------- */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2.5px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent-rose), var(--accent-orchid), var(--accent-champagne));
+  z-index: 1200;
+  transition: width 0.08s linear;
+  box-shadow: 0 0 10px var(--accent-rose-glow);
+}
+
+/* ---------- Custom Smooth Cursor ---------- */
+.cursor-dot, .cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1100;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent-rose-soft);
+  box-shadow: 0 0 8px var(--accent-rose);
+}
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 182, 205, 0.4);
+  transition: width 0.25s var(--ease-apple), height 0.25s var(--ease-apple), border-color 0.25s, background-color 0.25s;
+}
+.cursor-ring.is-hover {
+  width: 58px;
+  height: 58px;
+  border-color: var(--accent-rose);
+  background: rgba(255, 122, 158, 0.08);
+}
+@media (hover: none) {
+  .cursor-dot, .cursor-ring { display: none; }
+}
+
+/* ---------- Ambient Background Lighting (Mesh) ---------- */
+.ambient-mesh {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.22;
+}
+.glow-1 {
+  width: 850px;
+  height: 850px;
+  background: radial-gradient(circle, var(--accent-rose-glow), transparent 70%);
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.glow-2 {
+  width: 750px;
+  height: 750px;
+  background: radial-gradient(circle, var(--accent-orchid-glow), transparent 70%);
+  bottom: 20%;
+  right: -150px;
+}
+.glow-3 {
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, var(--accent-champagne-glow), transparent 70%);
+  top: 45%;
+  left: -150px;
+}
+
+/* ==========================================================================
+   FLOATING LUXURY NAVIGATION PILL
+   ========================================================================== */
+.apple-nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+}
+.apple-nav-inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2vw, 32px);
+  padding: 8px 12px 8px 22px;
+  background: rgba(19, 14, 26, 0.78);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid var(--border-glass-bright);
+  border-radius: 9999px;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.75), 0 0 20px rgba(255, 122, 158, 0.08) inset;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.apple-nav-inner:hover {
+  border-color: rgba(255, 195, 215, 0.6);
+}
+.apple-brand {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.apple-brand-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-rose);
+  box-shadow: 0 0 12px var(--accent-rose);
+}
+.apple-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+}
+.apple-links a {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color 0.25s var(--ease-apple);
+  padding: 6px 4px;
+}
+.apple-links a:hover {
+  color: var(--text-primary);
+}
+.apple-nav-cta {
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #FFF0F5 0%, #FED7E2 100%);
+  color: #1A0817;
+  box-shadow: 0 4px 15px rgba(255, 122, 158, 0.3);
+  transition: transform 0.25s var(--ease-apple), box-shadow 0.25s;
+}
+.apple-nav-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 22px rgba(255, 122, 158, 0.5);
+}
+@media (max-width: 880px) {
+  .apple-links { display: none; }
+}
+
+/* ==========================================================================
+   BUTTONS & MICRO UI
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  border-radius: 9999px;
+  padding: 15px 30px;
+  transition: transform 0.3s var(--ease-apple), box-shadow 0.3s var(--ease-apple), background 0.3s, border-color 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #FFF0F5 0%, #FED7E2 40%, #FBCFE8 100%);
+  color: #180917;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 25px -5px rgba(255, 122, 158, 0.35);
+}
+.btn-primary:hover {
+  transform: scale(1.04);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF0F5 100%);
+  box-shadow: 0 18px 40px -8px rgba(255, 122, 158, 0.55), 0 0 20px rgba(247, 215, 181, 0.3);
+}
+.btn-glass {
+  background: rgba(255, 185, 205, 0.08);
+  color: var(--text-primary);
+  border: 1px solid var(--border-glass-bright);
+  backdrop-filter: blur(14px);
+}
+.btn-glass:hover {
+  background: rgba(255, 185, 205, 0.16);
+  border-color: rgba(255, 195, 215, 0.6);
+  box-shadow: 0 10px 30px -5px rgba(255, 122, 158, 0.25);
+  transform: scale(1.04);
+}
+.btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  fill: none;
+  transition: transform 0.25s var(--ease-apple);
+}
+.btn:hover svg {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY & SECTION HEADINGS (Apple iPhone Pro Style & Soft Iridescent Motion)
+   ========================================================================== */
+@keyframes appleGradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.apple-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-rose-soft);
+  margin-bottom: 14px;
+}
+.apple-eyebrow-accent {
+  color: var(--accent-rose);
+}
+.apple-eyebrow-cyan {
+  color: var(--accent-rose-soft);
+}
+.apple-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4.8vw, 68px);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.028em;
+  color: var(--text-primary);
+  max-width: 20ch;
+  text-wrap: balance;
+  padding-bottom: 0.15em;
+  overflow: visible;
+}
+.apple-title-gradient {
+  background: linear-gradient(
+    115deg,
+    #FFFFFF 0%,
+    #FED7E2 20%,
+    #FF85A2 40%,
+    #F7D7B5 60%,
+    #C084FC 80%,
+    #FFFFFF 100%
+  );
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: appleGradientFlow 7s ease-in-out infinite;
+  display: inline-block;
+  padding-bottom: 0.24em;
+  margin-bottom: -0.24em;
+  padding-top: 0.08em;
+  margin-top: -0.08em;
+  padding-right: 0.08em;
+  padding-left: 0.02em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  will-change: background-position;
+}
+.apple-title-rose {
+  background: linear-gradient(
+    115deg,
+    #FFFFFF 0%,
+    #FF7A9E 25%,
+    #FBBFD0 50%,
+    #C084FC 75%,
+    #FFFFFF 100%
+  );
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: appleGradientFlow 7s ease-in-out infinite;
+  display: inline-block;
+  padding-bottom: 0.24em;
+  margin-bottom: -0.24em;
+  padding-top: 0.08em;
+  margin-top: -0.08em;
+  padding-right: 0.08em;
+  padding-left: 0.02em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  will-change: background-position;
+}
+.apple-title-cyan {
+  background: linear-gradient(
+    115deg,
+    #FFFFFF 0%,
+    #F472B6 25%,
+    #E879F9 50%,
+    #FF7A9E 75%,
+    #FFFFFF 100%
+  );
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: appleGradientFlow 7s ease-in-out infinite;
+  display: inline-block;
+  padding-bottom: 0.24em;
+  margin-bottom: -0.24em;
+  padding-top: 0.08em;
+  margin-top: -0.08em;
+  padding-right: 0.08em;
+  padding-left: 0.02em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  will-change: background-position;
+}
+.apple-title-gold {
+  background: linear-gradient(
+    115deg,
+    #FFFFFF 0%,
+    #F7D7B5 25%,
+    #FF85A2 50%,
+    #F6D6BA 75%,
+    #FFFFFF 100%
+  );
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: appleGradientFlow 7s ease-in-out infinite;
+  display: inline-block;
+  padding-bottom: 0.24em;
+  margin-bottom: -0.24em;
+  padding-top: 0.08em;
+  margin-top: -0.08em;
+  padding-right: 0.08em;
+  padding-left: 0.02em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  will-change: background-position;
+}
+.apple-section-sub {
+  font-size: clamp(15px, 1.4vw, 19px);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  max-width: 640px;
+  margin-top: 14px;
+  text-wrap: pretty;
+}
+.apple-head-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.8s var(--ease-apple), transform 0.8s var(--ease-apple);
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ==========================================================================
+   01. HERO SECTION (Apple iPhone Pro Style)
+   ========================================================================== */
+.hero-apple {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 140px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  background: rgba(255, 182, 205, 0.08);
+  border: 1px solid var(--border-glass-bright);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-rose-soft);
+  box-shadow: 0 8px 24px -6px rgba(255, 122, 158, 0.25);
+  margin-bottom: 26px;
+}
+.hero-pill-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-rose);
+  box-shadow: 0 0 10px var(--accent-rose);
+}
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 6.4vw, 92px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  max-width: 22ch;
+  margin: 0 auto;
+  text-wrap: balance;
+  padding-bottom: 0.15em;
+  overflow: visible;
+}
+.hero-desc {
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 400;
+  line-height: 1.58;
+  color: var(--text-secondary);
+  max-width: 680px;
+  margin: 24px auto 36px;
+  text-wrap: pretty;
+}
+.hero-actions-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Hero Spec Bar */
+.hero-specs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border-glass-subtle);
+  border: 1px solid var(--border-glass);
+  border-radius: 24px;
+  overflow: hidden;
+  max-width: 1100px;
+  width: 100%;
+  margin: 70px auto 0;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 122, 158, 0.08);
+}
+.hero-spec-item {
+  background: rgba(20, 14, 28, 0.65);
+  padding: 28px 20px;
+  text-align: center;
+  transition: background 0.3s;
+}
+.hero-spec-item:hover {
+  background: rgba(255, 182, 205, 0.06);
+}
+.hero-spec-item b {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 3.4vw, 46px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  display: block;
+  color: var(--text-primary);
+}
+.hero-spec-item b em {
+  font-style: normal;
+  color: var(--accent-rose);
+}
+.hero-spec-item small {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+@media (max-width: 768px) {
+  .hero-specs { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ==========================================================================
+   02. STRATEGY & CAPABILITIES SECTION (3D Arc Deck Carousel)
+   ========================================================================== */
+.strategy-section {
+  padding: clamp(80px, 10vw, 150px) 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.strategy-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-glass-bright), transparent);
+}
+
+/* Strategic Info Card Inside 3D Arc Deck (Apple Pro Motion Style) */
+.arc-card.arc-info-card {
+  background: linear-gradient(180deg, rgba(32, 22, 44, 0.95) 0%, rgba(14, 10, 22, 0.98) 100%);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s var(--ease-apple), border-color 0.4s, box-shadow 0.4s;
+}
+.arc-card.arc-info-card .arc-card-inner {
+  padding: clamp(22px, 2.4vw, 28px) clamp(18px, 2vw, 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+.arc-card.arc-info-card .arc-overlay {
+  display: none;
+}
+
+/* Ambient Radial Glow on Each Card */
+.arc-card.arc-info-card .arc-info-glow {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-rose-glow) 0%, transparent 70%);
+  opacity: 0.45;
+  pointer-events: none;
+  transition: opacity 0.5s, transform 0.5s;
+  filter: blur(25px);
+}
+.arc-card.arc-info-card:hover .arc-info-glow,
+.arc-card.arc-info-card.is-center .arc-info-glow {
+  opacity: 0.85;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.arc-card.arc-info-card:hover {
+  border-color: var(--border-glass-bright);
+  box-shadow: 0 40px 95px -15px rgba(0, 0, 0, 0.96), 0 0 45px var(--accent-rose-glow);
+}
+.arc-card.arc-info-card.is-center {
+  border-color: rgba(255, 195, 215, 0.55);
+  box-shadow: 0 40px 95px -15px rgba(0, 0, 0, 0.96), 0 0 50px var(--accent-rose-glow);
+}
+
+/* Top Header */
+.arc-info-header {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+.arc-info-stat {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 2.6vw, 36px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  text-align: right;
+}
+.arc-info-stat em {
+  font-style: normal;
+  color: var(--accent-rose);
+}
+.arc-info-stat small {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-rose-soft);
+  margin-top: 3px;
+}
+
+/* Centerpiece 3D Motion Hero Stage (Dedicated Centered Area - Lowered & Balanced) */
+.arc-motion-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 94px;
+  margin: auto 0;
+  padding: 8px 0;
+  z-index: 3;
+}
+
+.arc-orb-wrap {
+  position: relative;
+  width: 86px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Floating Pulsing Glow Rings - Contained & Concentric */
+.arc-orb-ring {
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 182, 205, 0.28);
+  animation: arc-orb-pulse 3.8s ease-in-out infinite;
+  pointer-events: none;
+}
+.arc-orb-ring.ring-2 {
+  inset: -11px;
+  border-color: rgba(255, 182, 205, 0.14);
+  animation: arc-orb-pulse 3.8s ease-in-out infinite 1.9s;
+}
+
+/* Frosted Glass Floating Orb */
+.arc-orb {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.28) 0%, rgba(255, 122, 158, 0.16) 45%, rgba(32, 20, 42, 0.9) 100%);
+  border: 1.5px solid rgba(255, 215, 230, 0.45);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.4), 0 0 24px var(--accent-rose-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-rose);
+  animation: arc-icon-float 4.2s ease-in-out infinite;
+  transition: transform 0.5s var(--ease-spring), box-shadow 0.4s, color 0.3s, border-color 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.arc-card.arc-info-card:hover .arc-orb,
+.arc-card.arc-info-card.is-center .arc-orb {
+  transform: scale(1.08) translateY(-2px);
+  color: #ffffff;
+  border-color: #fff;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.7), inset 0 2px 8px rgba(255, 255, 255, 0.6), 0 0 32px var(--accent-rose-glow);
+}
+
+.arc-orb svg {
+  width: 33px;
+  height: 33px;
+  stroke-width: 1.75;
+  fill: none;
+  stroke: currentColor;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.45));
+  transition: transform 0.4s var(--ease-spring);
+  margin: auto;
+  display: block;
+}
+
+.arc-card.arc-info-card:hover .arc-orb svg,
+.arc-card.arc-info-card.is-center .arc-orb svg {
+  transform: scale(1.06) rotate(2deg);
+}
+
+/* Lower Information Content Stage */
+.arc-info-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
+  z-index: 3;
+}
+
+/* Category Tag */
+.arc-info-tag {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-rose);
+  display: inline-block;
+  margin-bottom: 10px;
+  background: rgba(255, 122, 158, 0.1);
+  border: 1px solid rgba(255, 122, 158, 0.25);
+  padding: 4px 13px;
+  border-radius: 9999px;
+}
+
+/* Large Impact Title / Headline */
+.arc-info-title {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 1.8vw, 23px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  text-wrap: balance;
+}
+
+.arc-info-subtitle {
+  font-size: 13px;
+  line-height: 1.48;
+  color: rgba(250, 246, 248, 0.78);
+  font-weight: 400;
+  text-wrap: pretty;
+  max-width: 320px;
+}
+
+/* Bento Key Delivery Pills in Footer (Refined & Vibrant) */
+.arc-info-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+  z-index: 3;
+}
+.arc-info-pill {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: rgba(255, 182, 205, 0.09);
+  border: 1px solid rgba(255, 182, 205, 0.24);
+  border-radius: 9999px;
+  padding: 5px 12px;
+  color: var(--text-primary);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+}
+.arc-card.arc-info-card:hover .arc-info-pill,
+.arc-card.arc-info-card.is-center .arc-info-pill {
+  background: rgba(255, 182, 205, 0.16);
+  border-color: rgba(255, 182, 205, 0.45);
+}
+
+/* Keyframe Animations - Contained Floating & Pulsing */
+@keyframes arc-icon-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes arc-orb-pulse {
+  0%, 100% {
+    transform: scale(0.96);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.85;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes arc-icon-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes arc-orb-pulse {
+  0%, 100% {
+    transform: scale(0.95);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.85;
+  }
+}
+
+/* ==========================================================================
+   03. FULL-BLEED 3D ARC DECK CAROUSEL (WIDESCREEN CINEMA)
+   ========================================================================== */
+.case-section {
+  padding: clamp(80px, 10vw, 150px) 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.case-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-glass-bright), transparent);
+}
+
+.arc-carousel {
+  position: relative;
+  width: 100%;
+  user-select: none;
+}
+
+/* Full-Bleed Widescreen Stage */
+.arc-stage {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  padding: 50px 0 90px;
+  perspective: 1600px;
+  transform-style: preserve-3d;
+  cursor: grab;
+}
+.arc-stage.is-dragging {
+  cursor: grabbing;
+}
+.arc-stage-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(900px, 92vw);
+  height: 480px;
+  background: radial-gradient(ellipse at center, var(--accent-rose-glow), transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+.arc-stage-glow.cyan-glow {
+  background: radial-gradient(ellipse at center, var(--accent-orchid-glow), transparent 70%);
+}
+
+.arc-track {
+  display: flex;
+  gap: clamp(20px, 2.5vw, 36px);
+  position: relative;
+  z-index: 2;
+  width: max-content;
+  transform: translateX(0);
+  will-change: transform;
+  touch-action: pan-y;
+}
+
+/* Giant IMAX-Style Cards (Vertical Default) */
+.arc-card {
+  flex: 0 0 clamp(290px, 25vw, 370px);
+  height: clamp(450px, 37vw, 560px);
+  border-radius: 28px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(26, 18, 34, 0.92);
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 182, 205, 0.06) inset;
+  transform-origin: 50% 125%;
+  transition: border-color 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple);
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+.arc-card:hover {
+  border-color: var(--border-glass-bright);
+  box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.95), 0 0 38px var(--accent-rose-glow);
+}
+.arc-card.is-center {
+  border-color: rgba(255, 195, 215, 0.4);
+  box-shadow: 0 35px 80px -20px rgba(0, 0, 0, 0.9), 0 0 35px var(--accent-rose-glow);
+}
+
+/* Horizontal Widescreen Cards for YouTube (16:9 Cinema Pro) */
+.arc-card.arc-card-wide {
+  flex: 0 0 clamp(380px, 46vw, 620px);
+  height: clamp(230px, 28vw, 360px);
+  border-radius: 26px;
+  transform-origin: 50% 140%;
+}
+@media (max-width: 768px) {
+  .arc-card.arc-card-wide {
+    flex: 0 0 clamp(300px, 84vw, 460px);
+    height: clamp(200px, 52vw, 290px);
+  }
+}
+
+/* Clean Gallery Photography Cards (Case 05) */
+.arc-card.arc-photo-card {
+  cursor: pointer;
+}
+.arc-card.arc-photo-card .arc-card-inner {
+  padding: 0;
+}
+.arc-card.arc-photo-card .arc-media-box img {
+  filter: brightness(0.96);
+  transition: transform 0.6s var(--ease-apple), filter 0.4s;
+}
+.arc-card.arc-photo-card:hover .arc-media-box img,
+.arc-card.arc-photo-card.is-center .arc-media-box img {
+  filter: brightness(1.02);
+  transform: scale(1.05);
+}
+
+.arc-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.arc-media-box {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.arc-media-box img,
+.arc-media-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-apple), filter 0.5s;
+  filter: brightness(0.9);
+  pointer-events: none;
+}
+.arc-card:hover .arc-media-box img,
+.arc-card:hover .arc-media-box video,
+.arc-card.is-center .arc-media-box img,
+.arc-card.is-center .arc-media-box video {
+  filter: brightness(1);
+}
+.arc-card:hover .arc-media-box img,
+.arc-card:hover .arc-media-box video {
+  transform: scale(1.05);
+}
+
+.arc-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 8, 13, 0.3) 0%, rgba(10, 8, 13, 0.1) 40%, rgba(10, 8, 13, 0.94) 100%);
+  pointer-events: none;
+}
+
+/* Card Metadata Elements */
+.arc-badge {
+  position: relative;
+  z-index: 3;
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: rgba(22, 15, 30, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass-bright);
+  color: var(--accent-rose-soft);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.arc-play-pill {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.92);
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #FFF0F5 0%, #FED7E2 100%);
+  color: #180917;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-apple), transform 0.35s var(--ease-apple);
+  box-shadow: 0 14px 32px rgba(255, 122, 158, 0.4);
+  pointer-events: none;
+}
+.arc-play-pill svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+.arc-card:hover .arc-play-pill,
+.arc-card.is-center:hover .arc-play-pill {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.arc-card-body {
+  position: relative;
+  z-index: 3;
+}
+.arc-card-tag {
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-rose);
+  display: block;
+  margin-bottom: 4px;
+}
+.arc-card-title {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 1.8vw, 24px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  text-wrap: balance;
+}
+.arc-card-desc {
+  font-size: 13.5px;
+  line-height: 1.48;
+  color: rgba(250, 246, 248, 0.75);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-wrap: pretty;
+}
+
+/* Nav Controls */
+.arc-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.arc-hint {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-rose-soft);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 8px;
+}
+.arc-hint svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  fill: none;
+}
+.arc-counter {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  min-width: 52px;
+  text-align: center;
+}
+.arc-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-glass-bright);
+  background: rgba(255, 185, 205, 0.08);
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.3s var(--ease-apple);
+  outline: none;
+}
+.arc-btn:hover {
+  background: rgba(255, 185, 205, 0.2);
+  border-color: rgba(255, 195, 215, 0.6);
+  box-shadow: 0 0 20px rgba(255, 122, 158, 0.3);
+  transform: scale(1.06);
+}
+.arc-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  fill: none;
+}
+.arc-btn:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.arc-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.arc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(255, 182, 205, 0.2);
+  border: 0;
+  cursor: pointer;
+  transition: all 0.35s var(--ease-apple);
+}
+.arc-dot.is-active {
+  width: 32px;
+  background: linear-gradient(90deg, var(--accent-rose), var(--accent-orchid));
+  box-shadow: 0 0 10px var(--accent-rose-glow);
+}
+
+/* ==========================================================================
+   04. ULTRA-CLEAN SPEC CARDS (Eventos & Plataformas)
+   ========================================================================== */
+.spec-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+.spec-item-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  padding: 24px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.spec-item-card:hover {
+  border-color: var(--border-glass-bright);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 122, 158, 0.15);
+  transform: translateY(-3px);
+}
+.spec-item-num {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-rose);
+  margin-bottom: 6px;
+}
+.spec-item-card h4 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  text-wrap: balance;
+}
+.spec-item-card p {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.52;
+  text-wrap: pretty;
+}
+@media (max-width: 900px) {
+  .spec-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 580px) {
+  .spec-cards-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   05. CONTACT / CLOSING SECTION (Apple Pro Callout)
+   ========================================================================== */
+.contact-section {
+  padding: clamp(90px, 12vw, 160px) 0 80px;
+  position: relative;
+  text-align: center;
+}
+.contact-card {
+  background: linear-gradient(180deg, rgba(34, 23, 44, 0.65) 0%, rgba(16, 11, 24, 0.92) 100%);
+  border: 1px solid var(--border-glass-bright);
+  border-radius: 36px;
+  padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 60px);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 122, 158, 0.12);
+}
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 60% at 50% 0%, rgba(255, 122, 158, 0.22), transparent 70%);
+  pointer-events: none;
+}
+.contact-headline {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5.2vw, 76px);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  max-width: 18ch;
+  margin: 0 auto;
+  text-wrap: balance;
+  padding-bottom: 0.18em;
+  overflow: visible;
+}
+.contact-desc {
+  font-size: clamp(16px, 1.5vw, 20px);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 20px auto 36px;
+  line-height: 1.58;
+  text-wrap: pretty;
+}
+.contact-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+  padding: 40px 0 60px;
+  font-size: 12.5px;
+  color: var(--text-tertiary);
+  border-top: 1px solid var(--border-glass-subtle);
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+.footer-links a:hover {
+  color: var(--accent-rose);
+}
+
+/* ==========================================================================
+   06. VIDEO & PHOTO LIGHTBOX MODAL (Apple Style)
+   ========================================================================== */
+.arc-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2100;
+  background: rgba(10, 8, 13, 0.9);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 3vw, 40px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s var(--ease-apple), visibility 0.35s;
+}
+.arc-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.arc-modal-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  max-height: 92vh;
+  background: rgba(24, 17, 32, 0.96);
+  border: 1px solid var(--border-glass-bright);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.95), 0 0 50px rgba(255, 122, 158, 0.15);
+  transform: scale(0.94) translateY(20px);
+  transition: transform 0.4s var(--ease-apple), max-width 0.35s var(--ease-apple);
+  display: flex;
+  flex-direction: column;
+}
+.arc-modal.is-open .arc-modal-dialog {
+  transform: scale(1) translateY(0);
+}
+
+/* Dynamic Dialog Formats */
+.arc-modal-dialog.is-vertical {
+  max-width: min(420px, 92vw);
+}
+.arc-modal-dialog.is-horizontal {
+  max-width: min(1060px, 94vw);
+}
+.arc-modal-dialog.is-photo {
+  max-width: min(1020px, 94vw);
+}
+.arc-modal-dialog.is-info {
+  max-width: min(780px, 92vw);
+}
+
+.arc-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-glass);
+  background: rgba(20, 14, 26, 0.95);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
+}
+.arc-modal-title-wrap {
+  flex: 1;
+  min-width: 0;
+}
+.arc-modal-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-rose);
+  display: block;
+  margin-bottom: 2px;
+}
+.arc-modal-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+}
+.arc-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.arc-modal-link {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+  border: 1px solid var(--border-glass-bright);
+  background: rgba(255, 185, 205, 0.08);
+  border-radius: 9999px;
+  padding: 6px 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.25s, border-color 0.25s, box-shadow 0.25s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.arc-modal-link:hover {
+  background: rgba(255, 185, 205, 0.18);
+  border-color: rgba(255, 195, 215, 0.6);
+  box-shadow: 0 0 15px rgba(255, 122, 158, 0.25);
+}
+.arc-modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border-glass-bright);
+  background: rgba(255, 185, 205, 0.08);
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.25s;
+}
+.arc-modal-close:hover {
+  background: var(--accent-rose);
+  border-color: var(--accent-rose);
+  color: #fff;
+  transform: rotate(90deg);
+}
+.arc-modal-close svg {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+}
+
+/* Modal Footer Action Bar (for Vertical Dialogs & Mobile) */
+.arc-modal-footer {
+  display: none;
+  padding: 12px 18px 14px;
+  background: rgba(20, 14, 26, 0.95);
+  border-top: 1px solid var(--border-glass);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
+}
+.arc-modal-footer .arc-modal-link {
+  width: 100%;
+  justify-content: center;
+  padding: 10px 18px;
+  font-size: 13px;
+  background: rgba(255, 185, 205, 0.12);
+  border-color: rgba(255, 185, 205, 0.35);
+}
+
+/* When dialog is vertical: hide header button, show clean footer button */
+.arc-modal-dialog.is-vertical .arc-modal-header .arc-modal-header-link {
+  display: none;
+}
+.arc-modal-dialog.is-vertical .arc-modal-footer {
+  display: flex;
+}
+
+/* Mobile Header Protection: Move header link to footer on small screens */
+@media (max-width: 640px) {
+  .arc-modal-header .arc-modal-header-link {
+    display: none;
+  }
+  .arc-modal-footer {
+    display: flex;
+  }
+}
+
+.arc-modal-player {
+  position: relative;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Horizontal 16:9 Widescreen (YouTube) */
+.arc-modal-player.is-horizontal {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-height: calc(86vh - 65px);
+}
+.arc-modal-player.is-horizontal iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Vertical 9:16 Portrait (Instagram & TikTok) */
+.arc-modal-player.is-vertical {
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  max-height: calc(88vh - 65px);
+  background: #000;
+}
+.arc-modal-player.is-vertical video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+  display: block;
+}
+.arc-modal-player.is-vertical iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #000;
+}
+
+/* Photo Lightbox */
+.arc-modal-player.is-photo {
+  aspect-ratio: auto;
+  background: transparent;
+  padding: 14px;
+  max-height: calc(88vh - 65px);
+}
+.arc-modal-player.is-photo img {
+  max-height: calc(84vh - 65px);
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.75);
+}
+
+/* Info Strategy Card */
+.arc-modal-player.is-info {
+  aspect-ratio: auto;
+  min-height: 380px;
+  background: linear-gradient(180deg, rgba(28, 19, 36, 0.98), rgba(12, 9, 16, 1));
+  padding: clamp(28px, 4.5vw, 54px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arc-modal-info-content {
+  max-width: 680px;
+  width: 100%;
+  text-align: left;
+}
+.arc-modal-info-metric {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 4.5vw, 60px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--accent-rose);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.arc-modal-info-title {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 2.5vw, 34px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.18;
+}
+.arc-modal-info-desc {
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+.arc-modal-info-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.arc-modal-player iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div class="progress-bar" id="progress-bar"></div>
+
+<!-- Ambient Mesh -->
+<div class="ambient-mesh">
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cdot"></div>
+<div class="cursor-ring" id="cring"></div>
+
+<!-- ==========================================================================
+     FLOATING APPLE NAV BAR
+     ========================================================================== -->
+<nav class="apple-nav">
+  <div class="apple-nav-inner">
+    <a class="apple-brand" href="#top">
+      <span class="apple-brand-dot"></span>
+      Ianca Alencar
+    </a>
+    <ul class="apple-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#case-instagram">Instagram</a></li>
+      <li><a href="#eventos">Eventos</a></li>
+      <li><a href="#plataformas">YouTube</a></li>
+      <li><a href="#tiktok">TikTok</a></li>
+      <li><a href="#fotografia">Fotografia</a></li>
+    </ul>
+    <a class="apple-nav-cta" href="https://wa.me/5592984195456?text=Ol%C3%A1%2C%20Ianca!%20Vi%20seu%20portf%C3%B3lio%20e%20gostei%20muito%20do%20seu%20trabalho.%20Gostaria%20de%20conversar%20com%20voc%C3%AA." target="_blank" rel="noopener">Falar comigo</a>
+  </div>
+</nav>
+
+<!-- ==========================================================================
+     01. HERO SECTION (Apple iPhone Pro Style)
+     ========================================================================== -->
+<header class="hero-apple" id="top">
+  <div class="wrap">
+    <h1 class="hero-headline reveal">
+      Estratégia, conteúdo e eventos.<br>
+      <span class="apple-title-gradient">Com resultados reais.</span>
+    </h1>
+    
+    <p class="hero-desc reveal">
+      Cases comprovados de ponta a ponta: do planejamento à criação de vídeos e grandes experiências que conectam milhares de pessoas e geram crescimento&nbsp;sustentável.
+    </p>
+    
+    <div class="hero-actions-group reveal">
+      <a class="btn btn-primary" href="#sobre">
+        Conhecer Minha Estratégia
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn-glass" href="#case-instagram">
+        Ver Cases em Vídeo
+      </a>
+    </div>
+
+    <!-- Hero Spec Bar -->
+    <div class="hero-specs reveal">
+      <div class="hero-spec-item">
+        <b>+50<em>%</em></b>
+        <small>Crescimento Natural</small>
+      </div>
+      <div class="hero-spec-item">
+        <b>4</b>
+        <small>Grandes Eventos</small>
+      </div>
+      <div class="hero-spec-item">
+        <b>+8<em>k</em></b>
+        <small>Pessoas Conectadas</small>
+      </div>
+      <div class="hero-spec-item">
+        <b>509<em>k</em></b>
+        <small>Views Orgânicas</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ==========================================================================
+     02. ESTRATÉGIA COMPROVADA NA PRÁTICA (3D ARC DECK CAROUSEL)
+     ========================================================================== -->
+<section class="strategy-section" id="sobre">
+  <div class="wrap">
+    <div class="apple-head-wrap reveal">
+      <div>
+        <span class="apple-eyebrow"><span class="apple-eyebrow-accent">Visão Estratégica</span> · Do Planejamento ao Sucesso</span>
+        <h2 class="apple-section-title">Estratégia comprovada<br><span class="apple-title-gradient">que gera resultados reais.</span></h2>
+      </div>
+      <div class="arc-header-right">
+        <p class="apple-section-sub">
+          Liderança de pessoas, conteúdos que atraem clientes de verdade e produções visuais que valorizam a sua&nbsp;marca.
+        </p>
+        <div class="arc-controls">
+          <div class="arc-counter">
+            <span class="arc-current">01</span>
+            <span class="arc-divider">/</span>
+            <span class="arc-total">06</span>
+          </div>
+          <button class="arc-btn arc-prev" aria-label="Slide anterior">
+            <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="arc-btn arc-next" aria-label="Próximo slide">
+            <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full-Bleed 3D Arc Stage -->
+  <div class="arc-carousel" data-arc-carousel id="arc-estrategia">
+    <div class="arc-stage">
+      <div class="arc-stage-glow"></div>
+      <div class="arc-track">
+
+        <!-- Card 1: Liderança & Equipe -->
+        <article class="arc-card arc-info-card"
+          data-type="info"
+          data-title="Equipe & Liderança Ágil"
+          data-badge="01 · Liderança de Equipe"
+          data-metric="04 Especialistas Liderados"
+          data-caption="Coordenação ativa de talentos criativos com processos ágeis e metas claras para garantir consistência e alto padrão em cada projeto."
+          data-pills="<span class='arc-info-pill'>Metodologia Ágil</span><span class='arc-info-pill'>Direção Criativa</span><span class='arc-info-pill'>Prazo Rigoroso</span>">
+          <div class="arc-info-glow"></div>
+          <div class="arc-card-inner">
+            <div class="arc-info-header">
+              <span class="arc-badge">01 · Equipe</span>
+              <div class="arc-info-stat">04<small>Especialistas</small></div>
+            </div>
+            
+            <div class="arc-motion-hero">
+              <div class="arc-orb-wrap">
+                <div class="arc-orb-ring"></div>
+                <div class="arc-orb-ring ring-2"></div>
+                <div class="arc-orb">
+                  <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="arc-info-body">
+              <span class="arc-info-tag">Gestão &amp; Alto Padrão</span>
+              <h4 class="arc-info-title">Equipes de Alta Performance &amp; Prazos Rigorosos</h4>
+              <p class="arc-info-subtitle">Coordenação criativa com processos ágeis e metas claras para entregas impecáveis.</p>
+            </div>
+            
+            <div class="arc-info-pills">
+              <span class="arc-info-pill">Metodologia Ágil</span>
+              <span class="arc-info-pill">Direção Criativa</span>
+              <span class="arc-info-pill">Prazo Rigoroso</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Crescimento Orgânico -->
+        <article class="arc-card arc-info-card"
+          data-type="info"
+          data-title="Crescimento Orgânico & Audiência"
+          data-badge="02 · Crescimento Natural"
+          data-metric="+50% em 12 Meses"
+          data-caption="Estratégia baseada em conteúdos que geram conexão genuína e autoridade, atraindo público qualificado sem depender de atalhos."
+          data-pills="<span class='arc-info-pill'>Público Qualificado</span><span class='arc-info-pill'>Retenção Alta</span><span class='arc-info-pill'>Autoridade Real</span>">
+          <div class="arc-info-glow" style="background: radial-gradient(circle, rgba(255, 135, 170, 0.32) 0%, transparent 70%);"></div>
+          <div class="arc-card-inner">
+            <div class="arc-info-header">
+              <span class="arc-badge">02 · Audiência</span>
+              <div class="arc-info-stat">+50<em>%</em><small>Em 12 Meses</small></div>
+            </div>
+            
+            <div class="arc-motion-hero">
+              <div class="arc-orb-wrap">
+                <div class="arc-orb-ring" style="border-color: rgba(255, 182, 205, 0.3);"></div>
+                <div class="arc-orb-ring ring-2" style="border-color: rgba(255, 182, 205, 0.15);"></div>
+                <div class="arc-orb" style="color: var(--accent-rose); box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), 0 0 25px var(--accent-rose-glow);">
+                  <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="arc-info-body">
+              <span class="arc-info-tag" style="color: var(--accent-rose-soft); border-color: rgba(255, 182, 205, 0.3); background: rgba(255, 182, 205, 0.1);">Expansão &amp; Atração</span>
+              <h4 class="arc-info-title">Crescimento Orgânico Real &amp; Atração de Clientes</h4>
+              <p class="arc-info-subtitle">Roteiros estratégicos que educam, geram desejo e convertem seguidores em clientes.</p>
+            </div>
+            
+            <div class="arc-info-pills">
+              <span class="arc-info-pill">Público Qualificado</span>
+              <span class="arc-info-pill">Retenção Alta</span>
+              <span class="arc-info-pill">Autoridade Real</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Grandes Eventos -->
+        <article class="arc-card arc-info-card"
+          data-type="info"
+          data-title="Grandes Eventos & Experiências"
+          data-badge="03 · Eventos &amp; Experiências"
+          data-metric="600+ Participantes"
+          data-caption="Planejamento e coordenação impecável do início ao fim: estrutura de palco, iluminação, cronograma e atendimento para encantar cada participante."
+          data-pills="<span class='arc-info-pill'>Estrutura &amp; Palco</span><span class='arc-info-pill'>Cenografia de Luxo</span><span class='arc-info-pill'>Experiência Única</span>">
+          <div class="arc-info-glow" style="background: radial-gradient(circle, var(--accent-champagne-glow) 0%, transparent 70%);"></div>
+          <div class="arc-card-inner">
+            <div class="arc-info-header">
+              <span class="arc-badge">03 · Eventos</span>
+              <div class="arc-info-stat">600<em>+</em><small>Pessoas</small></div>
+            </div>
+            
+            <div class="arc-motion-hero">
+              <div class="arc-orb-wrap">
+                <div class="arc-orb-ring" style="border-color: rgba(247, 215, 181, 0.35);"></div>
+                <div class="arc-orb-ring ring-2" style="border-color: rgba(247, 215, 181, 0.18);"></div>
+                <div class="arc-orb" style="color: var(--accent-champagne); box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), 0 0 30px var(--accent-champagne-glow);">
+                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="arc-info-body">
+              <span class="arc-info-tag" style="color: var(--accent-champagne); border-color: rgba(247, 215, 181, 0.3); background: rgba(247, 215, 181, 0.1);">Experiência de Marca</span>
+              <h4 class="arc-info-title">Grandes Eventos &amp; Experiências Inesquecíveis</h4>
+              <p class="arc-info-subtitle">Coordenação total do palco à recepção com som, iluminação e cronograma impecáveis.</p>
+            </div>
+            
+            <div class="arc-info-pills">
+              <span class="arc-info-pill">Estrutura &amp; Palco</span>
+              <span class="arc-info-pill">Cenografia de Luxo</span>
+              <span class="arc-info-pill">Experiência Única</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Audiovisual 4K -->
+        <article class="arc-card arc-info-card"
+          data-type="info"
+          data-title="Produção Audiovisual & Cinema 4K"
+          data-badge="04 · Produção de Vídeo"
+          data-metric="4K Cinema Pro"
+          data-caption="Produção de conteúdos visuais sofisticados com narrativa dinâmica e padrão cinematográfico que valorizam a percepção da sua marca."
+          data-pills="<span class='arc-info-pill'>Roteiros Criativos</span><span class='arc-info-pill'>Edição Rítmica</span><span class='arc-info-pill'>Cinema 4K</span>">
+          <div class="arc-info-glow" style="background: radial-gradient(circle, var(--accent-orchid-glow) 0%, transparent 70%);"></div>
+          <div class="arc-card-inner">
+            <div class="arc-info-header">
+              <span class="arc-badge">04 · Vídeo</span>
+              <div class="arc-info-stat">4<em>K</em><small>Cinema Pro</small></div>
+            </div>
+            
+            <div class="arc-motion-hero">
+              <div class="arc-orb-wrap">
+                <div class="arc-orb-ring" style="border-color: rgba(192, 132, 252, 0.35);"></div>
+                <div class="arc-orb-ring ring-2" style="border-color: rgba(192, 132, 252, 0.18);"></div>
+                <div class="arc-orb" style="color: var(--accent-orchid); box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), 0 0 30px var(--accent-orchid-glow);">
+                  <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="arc-info-body">
+              <span class="arc-info-tag" style="color: var(--accent-orchid); border-color: rgba(192, 132, 252, 0.3); background: rgba(192, 132, 252, 0.1);">Cinema &amp; Retenção</span>
+              <h4 class="arc-info-title">Produção Audiovisual 4K com Estética de Cinema</h4>
+              <p class="arc-info-subtitle">Vídeos modernos que prendem a atenção do primeiro ao último segundo.</p>
+            </div>
+            
+            <div class="arc-info-pills">
+              <span class="arc-info-pill">Roteiros Criativos</span>
+              <span class="arc-info-pill">Edição Rítmica</span>
+              <span class="arc-info-pill">Cinema 4K</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Transmissões Ao Vivo -->
+        <article class="arc-card arc-info-card"
+          data-type="info"
+          data-title="Transmissões Ao Vivo Profissionais"
+          data-badge="05 · Broadcast Digital"
+          data-metric="5k+ Ao Vivo"
+          data-caption="Direção técnica e suporte completo para lives e eventos digitais com áudio e imagem de estúdio, garantindo transmissão estável e engajamento."
+          data-pills="<span class='arc-info-pill'>Zero Falhas</span><span class='arc-info-pill'>Áudio Impecável</span><span class='arc-info-pill'>Estúdio Digital</span>">
+          <div class="arc-info-glow" style="background: radial-gradient(circle, var(--accent-cyan-glow) 0%, transparent 70%);"></div>
+          <div class="arc-card-inner">
+            <div class="arc-info-header">
+              <span class="arc-badge">05 · Ao Vivo</span>
+              <div class="arc-info-stat">5<em>k+</em><small>Ao Vivo</small></div>
+            </div>
+            
+            <div class="arc-motion-hero">
+              <div class="arc-orb-wrap">
+                <div class="arc-orb-ring" style="border-color: rgba(244, 114, 182, 0.35);"></div>
+                <div class="arc-orb-ring ring-2" style="border-color: rgba(244, 114, 182, 0.18);"></div>
+                <div class="arc-orb" style="color: var(--accent-cyan); box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), 0 0 30px var(--accent-cyan-glow);">
+                  <svg viewBox="0 0 24 24"><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M7.76 7.76a6 6 0 0 0 0 8.48"/><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.48"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="arc-info-body">
+              <span class="arc-info-tag" style="color: var(--accent-cyan); border-color: rgba(244, 114, 182, 0.3); background: rgba(244, 114, 182, 0.1);">Direção Técnica</span>
+              <h4 class="arc-info-title">Transmissões Ao Vivo 100% Seguras e Estáveis</h4>
+              <p class="arc-info-subtitle">Estrutura de estúdio com múltiplos ângulos e áudio cristalino sem risco de quedas.</p>
+            </div>
+            
+            <div class="arc-info-pills">
+              <span class="arc-info-pill">Zero Falhas</span>
+              <span class="arc-info-pill">Áudio Impecável</span>
+              <span class="arc-info-pill">Estúdio Digital</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Curadoria Fotográfica -->
+        <article class="arc-card arc-info-card"
+          data-type="info"
+          data-title="Fotografia Editorial & Autoridade"
+          data-badge="06 · Fotografia de Marca"
+          data-metric="RAW Qualidade Editorial"
+          data-caption="Retratos executivos e cobertura documental com iluminação precisa e tratamento de revista que elevam instantaneamente o prestígio da empresa."
+          data-pills="<span class='arc-info-pill'>Retratos Pro</span><span class='arc-info-pill'>Tratamento Fino</span><span class='arc-info-pill'>Posicionamento</span>">
+          <div class="arc-info-glow" style="background: radial-gradient(circle, var(--accent-rose-glow) 0%, transparent 70%);"></div>
+          <div class="arc-card-inner">
+            <div class="arc-info-header">
+              <span class="arc-badge">06 · Fotografia</span>
+              <div class="arc-info-stat">RAW<small>Editorial</small></div>
+            </div>
+            
+            <div class="arc-motion-hero">
+              <div class="arc-orb-wrap">
+                <div class="arc-orb-ring"></div>
+                <div class="arc-orb-ring ring-2"></div>
+                <div class="arc-orb">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="14.31" y1="8" x2="20.05" y2="17.94"/><line x1="9.69" y1="8" x2="21.17" y2="8"/><line x1="7.38" y1="12" x2="13.12" y2="2.06"/><line x1="9.69" y1="16" x2="3.95" y2="6.06"/><line x1="14.31" y1="16" x2="2.83" y2="16"/><line x1="16.62" y1="12" x2="10.88" y2="21.94"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="arc-info-body">
+              <span class="arc-info-tag">Valor &amp; Autoridade</span>
+              <h4 class="arc-info-title">Fotografia de Autoridade &amp; Posicionamento Premium</h4>
+              <p class="arc-info-subtitle">Retratos executivos elegantes e iluminação de cinema que valorizam sua marca.</p>
+            </div>
+            
+            <div class="arc-info-pills">
+              <span class="arc-info-pill">Retratos Pro</span>
+              <span class="arc-info-pill">Tratamento Fino</span>
+              <span class="arc-info-pill">Posicionamento</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="arc-dots"></div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     03. CASE 01: INSTAGRAM REELS (Widescreen 3D Arc Deck)
+     ========================================================================== -->
+<section class="case-section" id="case-instagram">
+  <div class="wrap">
+    <div class="apple-head-wrap reveal">
+      <div>
+        <span class="apple-eyebrow"><span class="apple-eyebrow-accent">Case 01</span> · Instagram</span>
+        <h2 class="apple-section-title">50% de crescimento real.<br><span class="apple-title-rose">Vídeo após vídeo.</span></h2>
+      </div>
+      <div class="arc-nav">
+        <span class="arc-hint">
+          <svg viewBox="0 0 24 24"><path d="M7 16l-4-4 4-4M17 8l4 4-4 4M3 12h18"/></svg>
+          Arraste
+        </span>
+        <button class="arc-btn arc-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="arc-counter"><span class="arc-current">01</span> / <span class="arc-total">06</span></div>
+        <button class="arc-btn arc-next" aria-label="Próximo">
+          <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Giant 3D Arc Stage (100vw) -->
+  <div class="arc-carousel reveal" data-arc-carousel id="arc-instagram">
+    <div class="arc-stage">
+      <div class="arc-stage-glow"></div>
+      <div class="arc-track">
+        
+        <!-- Reel 1: Aulão Presencial Manaus -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DPmZD-pjpeJ/" data-title="Aulão Presencial — SEMED Manaus" data-badge="Aulão Manaus" data-caption="Cobertura com energia contagiante reunindo milhares de estudantes">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_aulao.jpg">
+                <source src="assets/videos/ig_aulao.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Aulão Manaus</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Reel</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Reel · Engajamento</span>
+              <h4 class="arc-card-title">Aulão Presencial Manaus</h4>
+              <p class="arc-card-desc">Cobertura dinâmica conectando milhares de alunos com energia e&nbsp;emoção.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reel 2: Lançamento João Pessoa -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DVEFdSNDpJL/" data-title="Lançamento Super Ensino — João Pessoa" data-badge="Lançamento JP" data-caption="Recepção calorosa para 200 professores e lideranças educacionais">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_joao_pessoa.jpg">
+                <source src="assets/videos/ig_joao_pessoa.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Lançamento JP</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Reel</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Reel · Expansão</span>
+              <h4 class="arc-card-title">Lançamento João Pessoa</h4>
+              <p class="arc-card-desc">Recepção calorosa a 200 professores e lideranças do&nbsp;setor.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reel 3: PremiAstro 600 Pessoas -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DSJR8OHDmfh/" data-title="PremiAstro — Celebração Anual Super Ensino" data-badge="PremiAstro · 600 Pessoas" data-caption="Premiação com palco iluminado e clima de celebração inesquecível">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_premiastro.jpg">
+                <source src="assets/videos/ig_premiastro.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">PremiAstro · 600 Pessoas</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Reel</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Reel · Evento Anual</span>
+              <h4 class="arc-card-title">PremiAstro 600 Pessoas</h4>
+              <p class="arc-card-desc">Melhores momentos de uma celebração anual de grande&nbsp;sucesso.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reel 4: Viradão de Estudos -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DPrOV72DhB7/" data-title="Viradão de Estudos — SEMED Manaus" data-badge="8k Alunos" data-caption="Ação educativa marcante conectando escolas e estudantes">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_viradao.jpg">
+                <source src="assets/videos/ig_viradao.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">8k Alunos</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Reel</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Reel · Ação Social</span>
+              <h4 class="arc-card-title">Viradão de Estudos</h4>
+              <p class="arc-card-desc">Impacto transformador e cobertura completa de encerramento do&nbsp;projeto.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reel 5: Professores em Destaque -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DM1BsG9vdgX/" data-title="Professores em Destaque" data-badge="Histórias Reais" data-caption="Valorização dos professores com histórias autênticas e acolhedoras">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_professores.jpg">
+                <source src="assets/videos/ig_professores.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Histórias Reais</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Reel</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Reel · Conexão</span>
+              <h4 class="arc-card-title">Professores em Destaque</h4>
+              <p class="arc-card-desc">Histórias inspiradoras que aproximam a equipe do&nbsp;público.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reel 6: Bastidores da Criação -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DQ9dVa3DswU/" data-title="Bastidores da Criação" data-badge="Bastidores" data-caption="O carinho e o cuidado em cada gravação do time">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_bastidores.jpg">
+                <source src="assets/videos/ig_bastidores.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Bastidores</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Reel</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Reel · Bastidores</span>
+              <h4 class="arc-card-title">Bastidores da Criação</h4>
+              <p class="arc-card-desc">Como criamos conteúdos com dedicação, técnica e alto&nbsp;padrão.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="arc-dots"></div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     04. CASE 02: GRANDES EVENTOS (Widescreen 3D Arc Deck)
+     ========================================================================== -->
+<section class="case-section" id="eventos">
+  <div class="wrap">
+    <div class="apple-head-wrap reveal">
+      <div>
+        <span class="apple-eyebrow"><span class="apple-eyebrow-accent">Case 02</span> · Eventos</span>
+        <h2 class="apple-section-title">4 grandes eventos.<br><span class="apple-title-rose">Tudo sob controle.</span></h2>
+      </div>
+      <div class="arc-nav">
+        <span class="arc-hint">
+          <svg viewBox="0 0 24 24"><path d="M7 16l-4-4 4-4M17 8l4 4-4 4M3 12h18"/></svg>
+          Arraste
+        </span>
+        <button class="arc-btn arc-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="arc-counter"><span class="arc-current">01</span> / <span class="arc-total">04</span></div>
+        <button class="arc-btn arc-next" aria-label="Próximo">
+          <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Giant 3D Arc Stage (100vw) -->
+  <div class="arc-carousel reveal" data-arc-carousel id="arc-eventos">
+    <div class="arc-stage">
+      <div class="arc-stage-glow"></div>
+      <div class="arc-track">
+        
+        <!-- Event 1: Lançamento João Pessoa -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DVEFdSNDpJL/" data-title="Lançamento Super Ensino em João Pessoa" data-badge="Lançamento JP" data-caption="Evento institucional para 200 professores e autoridades">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_joao_pessoa.jpg">
+                <source src="assets/videos/event_joao_pessoa.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Lançamento JP</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Cobertura</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Evento 01 · João Pessoa</span>
+              <h4 class="arc-card-title">Lançamento João Pessoa</h4>
+              <p class="arc-card-desc">Planejamento cuidadoso e recepção calorosa para 200&nbsp;professores.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Event 2: PremiAstro Super Ensino -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DSYZ52tDpM-/" data-title="PremiAstro — Premiação Super Ensino" data-badge="PremiAstro" data-caption="Premiação corporativa com 600 participantes">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_premiastro.jpg">
+                <source src="assets/videos/event_premiastro.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">PremiAstro</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Cobertura</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Evento 02 · Premiação Anual</span>
+              <h4 class="arc-card-title">PremiAstro Super Ensino</h4>
+              <p class="arc-card-desc">Organização geral, palco e celebração para 600&nbsp;participantes.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Event 3: Viradão SAEB Manaus -->
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DP1ad-ODlV7/" data-title="Viradão SAEB — SEMED Manaus" data-badge="Viradão SAEB" data-caption="Ação educacional com mais de 8.000 alunos">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_viradao.jpg">
+                <source src="assets/videos/event_viradao.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Viradão SAEB</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Cobertura</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Evento 03 · SEMED Manaus</span>
+              <h4 class="arc-card-title">Viradão SAEB Manaus</h4>
+              <p class="arc-card-desc">Ação educacional em grande escala com mais de 8 mil&nbsp;alunos.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Event 4: Transmissão ao Vivo 2 Dias (YouTube) -->
+        <article class="arc-card" data-type="youtube" data-video-url="_jN83hKXuTM" data-video-src="assets/videos/live_viradao_hd.mp4" data-title="Transmissão ao Vivo 2 Dias — Viradão Super Ensino" data-badge="Live · 2 Dias" data-caption="Transmissão ao vivo com direção técnica completa">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_live.jpg">
+                <source src="assets/videos/event_live.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Live · 2 Dias</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Live</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">Evento 04 · Ao Vivo</span>
+              <h4 class="arc-card-title">Transmissão ao Vivo 2 Dias</h4>
+              <p class="arc-card-desc">Mais de 5 mil visualizações com imagem nítida e som&nbsp;perfeito.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="arc-dots"></div>
+  </div>
+
+  <!-- Apple Spec Cards (Clean & Objective) -->
+  <div class="wrap">
+    <div class="spec-cards-grid reveal">
+      <div class="spec-item-card">
+        <span class="spec-item-num">01 · João Pessoa</span>
+        <h4>Lançamento Oficial</h4>
+        <p>200 professores e convidados com cobertura em vídeo&nbsp;completa.</p>
+      </div>
+      <div class="spec-item-card">
+        <span class="spec-item-num">02 · PremiAstro</span>
+        <h4>600 Pessoas no Evento</h4>
+        <p>Organização de ponta a ponta, estrutura de palco e momentos&nbsp;únicos.</p>
+      </div>
+      <div class="spec-item-card">
+        <span class="spec-item-num">03 · Viradão SAEB</span>
+        <h4>+8.000 Alunos Atendidos</h4>
+        <p>Parceria educacional de sucesso com registro de fotos em&nbsp;massa.</p>
+      </div>
+      <div class="spec-item-card">
+        <span class="spec-item-num">04 · Ao Vivo</span>
+        <h4>5.076 Visualizações</h4>
+        <p>2 dias de transmissão contínua sem falhas e com alta&nbsp;participação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     05. CASE 03: YOUTUBE & AUDIOVISUAL (Widescreen 3D Arc Deck)
+     ========================================================================== -->
+<section class="case-section" id="plataformas">
+  <div class="wrap">
+    <div class="apple-head-wrap reveal">
+      <div>
+        <span class="apple-eyebrow"><span class="apple-eyebrow-accent">Case 03</span> · YouTube</span>
+        <h2 class="apple-section-title">Conteúdo que ensina,<br><span class="apple-title-gradient">conecta e constrói autoridade.</span></h2>
+      </div>
+      <div class="arc-nav">
+        <span class="arc-hint">
+          <svg viewBox="0 0 24 24"><path d="M7 16l-4-4 4-4M17 8l4 4-4 4M3 12h18"/></svg>
+          Arraste
+        </span>
+        <button class="arc-btn arc-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="arc-counter"><span class="arc-current">01</span> / <span class="arc-total">05</span></div>
+        <button class="arc-btn arc-next" aria-label="Próximo">
+          <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Giant 3D Arc Stage (100vw) - Horizontal Widescreen Cinema -->
+  <div class="arc-carousel reveal" data-arc-carousel id="arc-youtube">
+    <div class="arc-stage">
+      <div class="arc-stage-glow"></div>
+      <div class="arc-track">
+        
+        <!-- YT 1 -->
+        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="yEaPOlmspDI" data-title="Super Ensino — Inclusão e Conectividade" data-badge="Vídeo Oficial" data-caption="Apresentação em alta definição sobre o futuro da educação digital">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="https://i.ytimg.com/vi/yEaPOlmspDI/maxresdefault.jpg">
+                <source src="assets/videos/yt_inclusao.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Vídeo Oficial</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Vídeo</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">YouTube · Canal Oficial</span>
+              <h4 class="arc-card-title">Inclusão e Futuro</h4>
+              <p class="arc-card-desc">Histórias inspiradoras que mostram o poder da&nbsp;educação.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- YT 2 -->
+        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="XrLNVvlOlrU" data-video-src="assets/videos/yt_aulao_5ano_hd.mp4" data-title="Aulão SAEB 5º Ano — Transmissão Ao Vivo" data-badge="Live · Ao Vivo" data-caption="Transmissão ao vivo com direção técnica e produção audiovisual">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_yt_5ano.jpg">
+                <source src="assets/videos/yt_aulao_saeb.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Transmissão Ao Vivo</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Live</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">YouTube · Live</span>
+              <h4 class="arc-card-title">Aulão ao Vivo do 5º Ano</h4>
+              <p class="arc-card-desc">Transmissão interativa que reuniu milhares de alunos em tempo&nbsp;real.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- YT 3 -->
+        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="PxFWjh2ZCoI" data-title="Portal da Super Ensino — Soluções Digitais" data-badge="Soluções Digitais" data-caption="Apresentação das soluções tecnológicas">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="https://i.ytimg.com/vi/PxFWjh2ZCoI/maxresdefault.jpg">
+                <source src="assets/videos/yt_portal.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Soluções Digitais</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Vídeo</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">YouTube · Soluções</span>
+              <h4 class="arc-card-title">Conheça a Plataforma</h4>
+              <p class="arc-card-desc">Demonstração simples e agradável de todas as soluções&nbsp;digitais.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- YT 4 -->
+        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="PWyqmtj5CQQ" data-title="Simulado SAEB — Língua Portuguesa" data-badge="Aulas Práticas" data-caption="Produção didática com alta retenção">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="https://i.ytimg.com/vi/PWyqmtj5CQQ/maxresdefault.jpg">
+                <source src="assets/videos/yt_simulado.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Aulas Práticas</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Vídeo</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">YouTube · Didático</span>
+              <h4 class="arc-card-title">Simulado de Português</h4>
+              <p class="arc-card-desc">Aulas dinâmicas pensadas para prender a atenção do início ao&nbsp;fim.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- YT 5 -->
+        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="5io-NyeaDEo" data-video-src="assets/videos/yt_aulao_manaus_hd.mp4" data-title="Aulão SAEB Ao Vivo — Parceria SEMED" data-badge="SEMED Manaus" data-caption="Transmissão ao vivo em larga escala">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_yt_manaus.jpg">
+                <source src="assets/videos/yt_viradao.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge">Transmissão SEMED</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir Live</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag">YouTube · Parceria</span>
+              <h4 class="arc-card-title">Aulão Especial Manaus</h4>
+              <p class="arc-card-desc">Grande encontro ao vivo conectando estudantes de toda a&nbsp;cidade.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="arc-dots"></div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     06. CASE 04: TIKTOK & VÍDEOS CURTOS (Widescreen 3D Arc Deck)
+     ========================================================================== -->
+<section class="case-section" id="tiktok">
+  <div class="wrap">
+    <div class="apple-head-wrap reveal">
+      <div>
+        <span class="apple-eyebrow"><span class="apple-eyebrow-cyan">Case 04</span> · TikTok</span>
+        <h2 class="apple-section-title">509.6K visualizações.<br><span class="apple-title-cyan">Comunicação leve, jovem e autêntica.</span></h2>
+      </div>
+      <div class="arc-nav">
+        <span class="arc-hint">
+          <svg viewBox="0 0 24 24"><path d="M7 16l-4-4 4-4M17 8l4 4-4 4M3 12h18"/></svg>
+          Arraste
+        </span>
+        <button class="arc-btn arc-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="arc-counter"><span class="arc-current">01</span> / <span class="arc-total">04</span></div>
+        <button class="arc-btn arc-next" aria-label="Próximo">
+          <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Giant 3D Arc Stage (100vw) -->
+  <div class="arc-carousel reveal" data-arc-carousel id="arc-tiktok">
+    <div class="arc-stage">
+      <div class="arc-stage-glow cyan-glow"></div>
+      <div class="arc-track">
+        
+        <!-- TikTok 1: Experimento na Sala -->
+        <article class="arc-card" data-type="tiktok" data-video-url="https://www.tiktok.com/@superensino/video/6919093359013367045" data-video-src="assets/videos/tiktok_experimento_hd.mp4" data-title="Experimento na Sala — Viral TikTok" data-badge="Viral · 509.6k" data-caption="Mais de 509 mil visualizações orgânicas">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_tiktok_experimento.jpg">
+                <source src="assets/videos/tiktok_experimento.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge" style="color:var(--accent-cyan)">Viral · 509.6k</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir TikTok</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag" style="color:var(--accent-cyan)">@superensino · Viral</span>
+              <h4 class="arc-card-title">Experimento na Sala</h4>
+              <p class="arc-card-desc">Mais de 509 mil visualizações naturais e milhares de&nbsp;compartilhamentos.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- TikTok 2: Dia a Dia dos Professores -->
+        <article class="arc-card" data-type="tiktok" data-video-url="https://www.tiktok.com/@superensino/video/7676162416136293653" data-video-src="assets/videos/tiktok_rotina_hd.mp4" data-title="Dia a Dia dos Professores — Rotina Escolar" data-badge="Dia a Dia" data-caption="Identificação com estudantes e rotina escolar">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_tiktok_rotina.jpg">
+                <source src="assets/videos/tiktok_rotina.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge" style="color:var(--accent-cyan)">Dia a Dia</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir TikTok</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag" style="color:var(--accent-cyan)">@superensino · Cotidiano</span>
+              <h4 class="arc-card-title">Dia a Dia dos Professores</h4>
+              <p class="arc-card-desc">Vídeos descontraídos que geram carinho e proximidade com o&nbsp;público.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- TikTok 3: Clipe Consolida+ -->
+        <article class="arc-card" data-type="tiktok" data-video-url="https://www.tiktok.com/@superensino/video/7673232902833949972" data-video-src="assets/videos/tiktok_consolida_hd.mp4" data-title="Clipe Consolida+ — Hit Musical" data-badge="Consolida+" data-caption="Clipe musical exclusivo e envolvente para o projeto Consolida+">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_tiktok_consolida.jpg">
+                <source src="assets/videos/tiktok_consolida.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge" style="color:var(--accent-cyan)">Consolida+</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir TikTok</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag" style="color:var(--accent-cyan)">@superensino · Hit Musical</span>
+              <h4 class="arc-card-title">Clipe Consolida+</h4>
+              <p class="arc-card-desc">Produção audiovisual dinâmica e envolvente que viralizou entre os&nbsp;alunos.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- TikTok 4: Super Visitas -->
+        <article class="arc-card" data-type="tiktok" data-video-url="https://www.tiktok.com/@superensino/video/7673950761528708359" data-video-src="assets/videos/tiktok_visitas_hd.mp4" data-title="Super Visitas — Conexão com Escolas" data-badge="Super Visitas" data-caption="Presença nas escolas com os SuperProfessores">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <video class="arc-card-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/poster_tiktok_visitas.jpg">
+                <source src="assets/videos/tiktok_visitas.mp4" type="video/mp4">
+              </video>
+              <div class="arc-overlay"></div>
+            </div>
+            <span class="arc-badge" style="color:var(--accent-cyan)">Super Visitas</span>
+            <div class="arc-play-pill">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <span>Assistir TikTok</span>
+            </div>
+            <div class="arc-card-body">
+              <span class="arc-card-tag" style="color:var(--accent-cyan)">@superensino · Presença Escolar</span>
+              <h4 class="arc-card-title">Super Visitas</h4>
+              <p class="arc-card-desc">Acompanhamento presencial nas escolas gerando forte conexão com a&nbsp;comunidade.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="arc-dots"></div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     07. CASE 05: FOTOGRAFIA & DIREÇÃO VISUAL (Widescreen 3D Arc Deck)
+     ========================================================================== -->
+<section class="case-section" id="fotografia">
+  <div class="wrap">
+    <div class="apple-head-wrap reveal">
+      <div>
+        <span class="apple-eyebrow"><span class="apple-eyebrow-accent">Case 05</span> · Fotografia</span>
+        <h2 class="apple-section-title">Imagens marcantes em<br><span class="apple-title-gradient">altíssima definição.</span></h2>
+      </div>
+      <div class="arc-nav">
+        <span class="arc-hint">
+          <svg viewBox="0 0 24 24"><path d="M7 16l-4-4 4-4M17 8l4 4-4 4M3 12h18"/></svg>
+          Arraste
+        </span>
+        <button class="arc-btn arc-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="arc-counter"><span class="arc-current">01</span> / <span class="arc-total">10</span></div>
+        <button class="arc-btn arc-next" aria-label="Próximo">
+          <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Giant 3D Arc Stage (100vw) -->
+  <div class="arc-carousel reveal" data-arc-carousel id="arc-fotografia">
+    <div class="arc-stage">
+      <div class="arc-stage-glow"></div>
+      <div class="arc-track">
+        
+        <!-- Photo 01 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_01_full.jpg" data-title="Fotografia Editorial 01" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_01_thumb.jpg" alt="Fotografia 01" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 02 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_02_full.jpg" data-title="Fotografia Editorial 02" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_02_thumb.jpg" alt="Fotografia 02" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 03 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_03_full.jpg" data-title="Fotografia Editorial 03" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_03_thumb.jpg" alt="Fotografia 03" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 04 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_04_full.jpg" data-title="Fotografia Editorial 04" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_04_thumb.jpg" alt="Fotografia 04" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 05 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_05_full.jpg" data-title="Fotografia Editorial 05" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_05_thumb.jpg" alt="Fotografia 05" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 06 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_06_full.jpg" data-title="Fotografia Editorial 06" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_06_thumb.jpg" alt="Fotografia 06" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 07 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_07_full.jpg" data-title="Fotografia Editorial 07" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_07_thumb.jpg" alt="Fotografia 07" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 08 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_08_full.jpg" data-title="Fotografia Editorial 08" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_08_thumb.jpg" alt="Fotografia 08" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 09 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_09_full.jpg" data-title="Fotografia Editorial 09" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_09_thumb.jpg" alt="Fotografia 09" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <!-- Photo 10 -->
+        <article class="arc-card arc-photo-card" data-type="photo" data-video-url="assets/photos/photo_10_full.jpg" data-title="Fotografia Editorial 10" data-badge="Fotografia">
+          <div class="arc-card-inner">
+            <div class="arc-media-box">
+              <img src="assets/photos/photo_10_thumb.jpg" alt="Fotografia 10" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="arc-dots"></div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     08. CONTACT SECTION (Apple Pro Callout)
+     ========================================================================== -->
+<section class="contact-section" id="contato">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <span class="apple-eyebrow"><span class="apple-eyebrow-accent">Próximos Passos</span> · Vamos Conversar</span>
+      <h2 class="contact-headline">
+        Vamos criar o próximo<br>
+        <span class="apple-title-gradient">grande projeto juntos?</span>
+      </h2>
+      <p class="contact-desc">
+        Pronta para liderar o marketing da sua empresa, acelerar o crescimento da sua marca e produzir conteúdos&nbsp;inesquecíveis.
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="https://wa.me/5592984195456?text=Ol%C3%A1%2C%20Ianca!%20Vi%20seu%20portf%C3%B3lio%20e%20gostei%20muito%20do%20seu%20trabalho.%20Gostaria%20de%20conversar%20com%20voc%C3%AA." target="_blank" rel="noopener">
+          Iniciar Conversa Agora
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+<footer>
+  <div class="wrap footer-inner">
+    <span>Ianca Alencar · Marketing Estratégico &amp; Criação Audiovisual</span>
+  </div>
+</footer>
+
+<!-- ==========================================================================
+     LIGHTBOX / VIDEO MODAL PLAYER
+     ========================================================================== -->
+<div class="arc-modal" id="arc-modal" role="dialog" aria-modal="true">
+  <div class="arc-modal-dialog">
+    <div class="arc-modal-header">
+      <div class="arc-modal-title-wrap">
+        <span class="arc-modal-badge" id="arc-modal-badge">Reel · Prova Real</span>
+        <h4 class="arc-modal-title" id="arc-modal-title">Título da Produção</h4>
+      </div>
+      <div class="arc-modal-actions">
+        <a class="arc-modal-link arc-modal-header-link" id="arc-modal-link" href="#" target="_blank" rel="noopener">
+          Abrir na Plataforma
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+        <button class="arc-modal-close" id="arc-modal-close" aria-label="Fechar modal">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="arc-modal-player" id="arc-modal-player">
+      <!-- Dynamic Player Rendered via JS -->
+    </div>
+    <div class="arc-modal-footer">
+      <a class="arc-modal-link arc-modal-footer-link" id="arc-modal-footer-link" href="#" target="_blank" rel="noopener">
+        Abrir no Instagram
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     SCRIPTS & 3D ENGINE
+     ========================================================================== -->
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Scroll Progress Bar ---------- */
+  var progressBar = document.getElementById("progress-bar");
+  window.addEventListener("scroll", function(){
+    var h = document.documentElement;
+    var pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    if (progressBar) progressBar.style.width = pct + "%";
+  }, { passive: true });
+
+  /* ---------- Smooth Custom Cursor ---------- */
+  var dot = document.getElementById("cdot"), ring = document.getElementById("cring");
+  var mx = 0, my = 0, rx = 0, ry = 0;
+  window.addEventListener("mousemove", function(e){
+    mx = e.clientX;
+    my = e.clientY;
+    if (dot) {
+      dot.style.left = mx + "px";
+      dot.style.top = my + "px";
+    }
+  }, { passive: true });
+  
+  (function cursorLoop(){
+    rx += (mx - rx) * 0.18;
+    ry += (my - ry) * 0.18;
+    if (ring) {
+      ring.style.left = rx + "px";
+      ring.style.top = ry + "px";
+    }
+    requestAnimationFrame(cursorLoop);
+  })();
+
+  document.querySelectorAll("a, button, .arc-card, .arc-btn, .bento-card").forEach(function(el){
+    el.addEventListener("mouseenter", function(){ if (ring) ring.classList.add("is-hover"); });
+    el.addEventListener("mouseleave", function(){ if (ring) ring.classList.remove("is-hover"); });
+  });
+
+  /* ---------- Scroll Reveal (Apple Ease In) ---------- */
+  var revealIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        en.target.classList.add("in");
+        revealIO.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: "0px 0px -6% 0px" });
+  document.querySelectorAll(".reveal").forEach(function(el){ revealIO.observe(el); });
+
+  /* ---------- Lightbox & Video Modal Handler ---------- */
+  var modalEl = document.getElementById("arc-modal");
+  var modalPlayer = document.getElementById("arc-modal-player");
+  var modalTitle = document.getElementById("arc-modal-title");
+  var modalBadge = document.getElementById("arc-modal-badge");
+  var modalLink = document.getElementById("arc-modal-link");
+  var modalFooterLink = document.getElementById("arc-modal-footer-link");
+  var modalCloseBtn = document.getElementById("arc-modal-close");
+
+  function setModalAction(url, text, isExternal) {
+    var icon = isExternal ? '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>' : '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+    if (modalLink) {
+      modalLink.href = url || "#";
+      modalLink.innerHTML = text + ' ' + icon;
+    }
+    if (modalFooterLink) {
+      modalFooterLink.href = url || "#";
+      modalFooterLink.innerHTML = text + ' ' + icon;
+    }
+  }
+
+  window.openArcVideoModal = function(data) {
+    if (!modalEl) return;
+    if (modalTitle) modalTitle.textContent = data.title || "Produção Audiovisual";
+    if (modalBadge) modalBadge.textContent = data.badge || "Prova Real";
+    
+    var dialogEl = modalEl.querySelector(".arc-modal-dialog");
+    if (dialogEl) {
+      dialogEl.className = "arc-modal-dialog";
+      if (data.type === "instagram" || data.type === "tiktok") {
+        dialogEl.classList.add("is-vertical");
+      } else if (data.type === "youtube") {
+        dialogEl.classList.add("is-horizontal");
+      } else if (data.type === "photo") {
+        dialogEl.classList.add("is-photo");
+      } else if (data.type === "info") {
+        dialogEl.classList.add("is-info");
+      }
+    }
+    
+    if (modalPlayer) {
+      modalPlayer.innerHTML = "";
+      if (data.type === "youtube") {
+        modalPlayer.className = "arc-modal-player is-horizontal";
+        if (data.videoSrc) {
+          modalPlayer.innerHTML = '<video src="' + data.videoSrc + '" controls autoplay playsinline class="arc-modal-video" style="width:100%; height:100%; object-fit:contain; background:#000;"></video>';
+        } else {
+          modalPlayer.innerHTML = '<iframe src="https://www.youtube.com/embed/' + data.url + '?autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="' + (data.title || "Vídeo") + '"></iframe>';
+        }
+        setModalAction("https://www.youtube.com/watch?v=" + data.url, "Abrir no YouTube", true);
+      } else if (data.type === "instagram") {
+        modalPlayer.className = "arc-modal-player is-vertical";
+        if (data.videoSrc) {
+          modalPlayer.innerHTML = '<video src="' + data.videoSrc + '" controls autoplay playsinline loop class="arc-modal-video"></video>';
+        } else {
+          var clean = (data.url || "").replace(/\/+$/, "");
+          modalPlayer.innerHTML = '<iframe src="' + clean + '/embed/" allowfullscreen scrolling="no" allow="autoplay;clipboard-write;encrypted-media;picture-in-picture" title="' + (data.title || "Reel") + '"></iframe>';
+        }
+        setModalAction(data.url, "Abrir no Instagram", true);
+      } else if (data.type === "tiktok") {
+        modalPlayer.className = "arc-modal-player is-vertical";
+        if (data.videoSrc) {
+          modalPlayer.innerHTML = '<video src="' + data.videoSrc + '" controls autoplay playsinline loop class="arc-modal-video"></video>';
+        } else {
+          modalPlayer.innerHTML = '<iframe src="https://www.tiktok.com/embed/@superensino" allowfullscreen scrolling="no" allow="autoplay;clipboard-write;encrypted-media;picture-in-picture" title="' + (data.title || "TikTok") + '"></iframe>';
+        }
+        setModalAction(data.url || "https://www.tiktok.com/@superensino", "Abrir no TikTok", true);
+      } else if (data.type === "photo") {
+        modalPlayer.className = "arc-modal-player is-photo";
+        modalPlayer.innerHTML = '<img src="' + data.url + '" alt="' + (data.title || "Fotografia") + '" loading="lazy">';
+        setModalAction(data.url, "Ver Imagem Original", true);
+      } else if (data.type === "info") {
+        modalPlayer.className = "arc-modal-player is-info";
+        modalPlayer.innerHTML = '<div class="arc-modal-info-content">' +
+          (data.metric ? '<div class="arc-modal-info-metric">' + data.metric + '</div>' : '') +
+          '<h3 class="arc-modal-info-title">' + (data.title || "Estratégia & Liderança") + '</h3>' +
+          '<p class="arc-modal-info-desc">' + (data.caption || "") + '</p>' +
+          (data.pills ? '<div class="arc-modal-info-pills">' + data.pills + '</div>' : '') +
+        '</div>';
+        setModalAction("https://wa.me/5592984195456?text=Ol%C3%A1%2C%20Ianca!%20Vi%20seu%20portf%C3%B3lio%20e%20gostei%20muito%20do%20seu%20trabalho.%20Gostaria%20de%20conversar%20com%20voc%C3%AA.", "Falar Sobre Este Projeto", true);
+      }
+    }
+    
+    modalEl.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  };
+
+  function closeArcVideoModal() {
+    if (!modalEl) return;
+    modalEl.classList.remove("is-open");
+    if (modalPlayer) {
+      var v = modalPlayer.querySelector("video");
+      if (v) {
+        v.pause();
+        v.src = "";
+      }
+      modalPlayer.innerHTML = "";
+    }
+    document.body.style.overflow = "";
+  }
+
+  if (modalCloseBtn) modalCloseBtn.addEventListener("click", closeArcVideoModal);
+  if (modalEl) {
+    modalEl.addEventListener("click", function(e) {
+      if (e.target === modalEl) closeArcVideoModal();
+    });
+  }
+  window.addEventListener("keydown", function(e) {
+    if (e.key === "Escape" && modalEl && modalEl.classList.contains("is-open")) {
+      closeArcVideoModal();
+    }
+  });
+
+  /* ==========================================================================
+     FULL-BLEED 3D ARC DECK CAROUSEL ENGINE (Widescreen IMAX Arc)
+     ========================================================================== */
+  class ArcDeckCarousel {
+    constructor(container) {
+      this.container = container;
+      this.stage = container.querySelector(".arc-stage");
+      this.track = container.querySelector(".arc-track");
+      this.cards = Array.from(container.querySelectorAll(".arc-card"));
+      this.prevBtn = container.querySelector(".arc-prev") || container.closest("section").querySelector(".arc-prev");
+      this.nextBtn = container.querySelector(".arc-next") || container.closest("section").querySelector(".arc-next");
+      this.currentLabel = container.querySelector(".arc-current") || container.closest("section").querySelector(".arc-current");
+      this.totalLabel = container.querySelector(".arc-total") || container.closest("section").querySelector(".arc-total");
+      this.dotsContainer = container.querySelector(".arc-dots");
+      
+      this.totalCards = this.cards.length;
+      this.currentIndex = 0;
+      this.targetScrollX = 0;
+      this.currentScrollX = 0;
+      this.isDragging = false;
+      this.startX = 0;
+      this.startScrollX = 0;
+      this.dragDistance = 0;
+      this.velocity = 0;
+      this.lastX = 0;
+      this.lastTime = 0;
+      this.step = 0;
+      
+      this.init();
+    }
+    
+    init() {
+      if (!this.cards.length) return;
+      if (this.totalLabel) {
+        this.totalLabel.textContent = String(this.totalCards).padStart(2, "0");
+      }
+      
+      // Build dots
+      if (this.dotsContainer) {
+        this.dotsContainer.innerHTML = "";
+        this.cards.forEach((_, i) => {
+          const dot = document.createElement("button");
+          dot.className = "arc-dot" + (i === 0 ? " is-active" : "");
+          dot.setAttribute("aria-label", "Ir para slide " + (i + 1));
+          dot.addEventListener("click", () => this.goTo(i));
+          this.dotsContainer.appendChild(dot);
+        });
+      }
+      
+      // Button listeners
+      if (this.prevBtn) {
+        this.prevBtn.addEventListener("click", () => this.goTo(this.currentIndex - 1));
+      }
+      if (this.nextBtn) {
+        this.nextBtn.addEventListener("click", () => this.goTo(this.currentIndex + 1));
+      }
+      
+      // Pointer drag events
+      this.stage.addEventListener("pointerdown", (e) => this.onPointerDown(e));
+      window.addEventListener("pointermove", (e) => this.onPointerMove(e));
+      window.addEventListener("pointerup", (e) => this.onPointerUp(e));
+      window.addEventListener("pointercancel", (e) => this.onPointerUp(e));
+      
+      // Card click handling
+      this.cards.forEach((card, i) => {
+        card.addEventListener("click", (e) => {
+          if (this.dragDistance > 8) return;
+          if (i !== this.currentIndex) {
+            e.preventDefault();
+            this.goTo(i);
+          } else {
+            // Find local video inside card or data-video-src attribute
+            var videoEl = card.querySelector("video source, video");
+            var videoSrc = card.dataset.videoSrc || (videoEl ? (videoEl.src || videoEl.getAttribute("src")) : null);
+            // Open full modal in appropriate vertical / horizontal aspect ratio
+            openArcVideoModal({
+              type: card.dataset.type,
+              url: card.dataset.videoUrl,
+              title: card.dataset.title,
+              badge: card.dataset.badge,
+              caption: card.dataset.caption,
+              metric: card.dataset.metric,
+              pills: card.dataset.pills,
+              videoSrc: videoSrc
+            });
+          }
+        });
+      });
+      
+      window.addEventListener("resize", () => {
+        this.computeStep();
+        this.goTo(this.currentIndex, true);
+      });
+      
+      this.computeStep();
+      this.goTo(0, true);
+      this.startLoop();
+    }
+    
+    computeStep() {
+      if (!this.cards[0]) return;
+      const cardW = this.cards[0].offsetWidth;
+      const gap = parseFloat(window.getComputedStyle(this.track).gap) || 28;
+      this.step = cardW + gap;
+    }
+    
+    onPointerDown(e) {
+      this.isDragging = true;
+      this.stage.classList.add("is-dragging");
+      this.startX = e.clientX;
+      this.startScrollX = this.currentScrollX;
+      this.lastX = e.clientX;
+      this.lastTime = performance.now();
+      this.dragDistance = 0;
+      this.velocity = 0;
+    }
+    
+    onPointerMove(e) {
+      if (!this.isDragging) return;
+      const dx = e.clientX - this.startX;
+      this.dragDistance = Math.abs(dx);
+      
+      const now = performance.now();
+      const dt = now - this.lastTime;
+      if (dt > 10) {
+        this.velocity = (e.clientX - this.lastX) / dt;
+        this.lastX = e.clientX;
+        this.lastTime = now;
+      }
+      
+      const maxScroll = (this.totalCards - 1) * this.step;
+      let targetX = this.startScrollX - dx;
+      
+      // Elastic resistance at boundaries
+      if (targetX < 0) {
+        targetX = targetX * 0.35;
+      } else if (targetX > maxScroll) {
+        targetX = maxScroll + (targetX - maxScroll) * 0.35;
+      }
+      
+      this.currentScrollX = targetX;
+      this.targetScrollX = targetX;
+      this.render();
+    }
+    
+    onPointerUp() {
+      if (!this.isDragging) return;
+      this.isDragging = false;
+      this.stage.classList.remove("is-dragging");
+      
+      const projected = this.currentScrollX - this.velocity * 120;
+      let nearestIndex = Math.round(projected / this.step);
+      nearestIndex = Math.max(0, Math.min(this.totalCards - 1, nearestIndex));
+      
+      this.goTo(nearestIndex);
+    }
+    
+    goTo(index, immediate = false) {
+      this.currentIndex = Math.max(0, Math.min(this.totalCards - 1, index));
+      this.targetScrollX = this.currentIndex * this.step;
+      if (immediate) {
+        this.currentScrollX = this.targetScrollX;
+        this.render();
+      }
+      this.updateUI();
+    }
+    
+    updateUI() {
+      if (this.currentLabel) {
+        this.currentLabel.textContent = String(this.currentIndex + 1).padStart(2, "0");
+      }
+      if (this.prevBtn) {
+        this.prevBtn.disabled = this.currentIndex === 0;
+      }
+      if (this.nextBtn) {
+        this.nextBtn.disabled = this.currentIndex === this.totalCards - 1;
+      }
+      if (this.dotsContainer) {
+        const dots = this.dotsContainer.querySelectorAll(".arc-dot");
+        dots.forEach((d, i) => d.classList.toggle("is-active", i === this.currentIndex));
+      }
+    }
+    
+    startLoop() {
+      const loop = () => {
+        if (!this.isDragging) {
+          const diff = this.targetScrollX - this.currentScrollX;
+          if (Math.abs(diff) > 0.08) {
+            this.currentScrollX += diff * 0.12;
+            this.render();
+          } else if (Math.abs(diff) > 0.001) {
+            this.currentScrollX = this.targetScrollX;
+            this.render();
+          }
+        }
+        requestAnimationFrame(loop);
+      };
+      loop();
+    }
+    
+    render() {
+      const stageW = this.stage.clientWidth;
+      const cardW = this.cards[0] ? this.cards[0].offsetWidth : 320;
+      const step = this.step || (cardW + 28);
+      
+      const trackX = (stageW / 2) - (cardW / 2) - this.currentScrollX;
+      this.track.style.transform = `translate3d(${trackX}px, 0, 0)`;
+      
+      this.cards.forEach((card, i) => {
+        const d = (i * step) - this.currentScrollX;
+        const norm = d / step;
+        const rot = norm * 7.5; // Arc fan rotation angle
+        const arcY = Math.pow(Math.abs(norm), 1.62) * 26; // Arc downward curve
+        const scale = Math.max(0.86, 1.05 - Math.abs(norm) * 0.045);
+        const zIndex = Math.round(100 - Math.abs(norm) * 10);
+        const opacity = Math.max(0.4, 1 - Math.abs(norm) * 0.14);
+        
+        card.style.transform = `translate3d(0, ${arcY}px, 0) rotate(${rot}deg) scale(${scale})`;
+        card.style.zIndex = zIndex;
+        card.style.opacity = opacity;
+        card.classList.toggle("is-center", Math.abs(norm) < 0.5);
+      });
+    }
+  }
+
+  // Initialize all Arc Carousels
+  document.querySelectorAll("[data-arc-carousel]").forEach(function(carEl){
+    new ArcDeckCarousel(carEl);
+  });
+
+  // Ensure all card background videos play automatically like Stories/Reels
+  function playAllCardVideos() {
+    document.querySelectorAll(".arc-card-video").forEach(function(v) {
+      v.muted = true;
+      var p = v.play();
+      if (p !== undefined) {
+        p.catch(function() {});
+      }
+    });
+  }
+  playAllCardVideos();
+  window.addEventListener("load", playAllCardVideos);
+  document.addEventListener("visibilitychange", function() {
+    if (!document.hidden) playAllCardVideos();
+  });
+})();
+</script>
+</body>
+</html>
