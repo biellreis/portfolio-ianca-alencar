@@ -32,42 +32,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
-   HIGH-TIER FEMININE LUXURY DESIGN SYSTEM (Rose Gold, Silk Obsidian & Champagne)
+   HIGH-TIER EXECUTIVE LUXURY DESIGN SYSTEM (Rose Gold, Silk Obsidian & Champagne)
    ========================================================================== */
 :root {
   /* Silk Obsidian & Caviar Plum Depth */
-  --bg-root: #0A080D;
-  --bg-surface: #130E1A;
-  --bg-card: rgba(28, 19, 36, 0.65);
-  --bg-card-hover: rgba(44, 29, 56, 0.88);
-  --bg-card-solid: #191222;
+  --bg-root: #0B0A0E;
+  --bg-surface: #14101A;
+  --bg-card: rgba(24, 18, 30, 0.75);
+  --bg-card-hover: rgba(36, 26, 46, 0.9);
+  --bg-card-solid: #16111E;
   
-  /* Satin Glass & Rose Quartz Borders */
-  --border-glass: rgba(255, 182, 205, 0.12);
-  --border-glass-subtle: rgba(255, 182, 205, 0.06);
-  --border-glass-bright: rgba(255, 195, 215, 0.38);
-  --border-gold: rgba(247, 215, 181, 0.3);
+  /* Satin Glass & Hairline Borders */
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-glass-subtle: rgba(255, 255, 255, 0.04);
+  --border-glass-bright: rgba(255, 255, 255, 0.16);
+  --border-gold: rgba(235, 211, 190, 0.25);
   
   /* Pearl White & Rose Cashmere Typography */
   --text-primary: #FAF6F8;
-  --text-secondary: #BCAAB8;
-  --text-tertiary: #83707F;
+  --text-secondary: #B4A6B2;
+  --text-tertiary: #7D6E7B;
   
-  /* Luxury Feminine Strategic Palette */
-  --accent-rose: #FF7A9E;           /* Vibrant Rose Quartz: Magnetic Connection & Emotion */
-  --accent-rose-soft: #FBBFD0;      /* Blush Silk: Welcoming, High-Tier Refinement */
-  --accent-rose-deep: #D6336C;      /* Imperial Crimson: Authority & Decisiveness */
-  --accent-rose-glow: rgba(255, 122, 158, 0.38);
+  /* Luxury Senior Strategic Palette (Warm Rose Gold, Satin Champagne, Muted Amethyst) */
+  --accent-rose: #E598A8;           /* Warm Rose Gold: Refined, Organic, Human */
+  --accent-rose-soft: #F3CCD5;      /* Blush Silk: Elegant Cashmere */
+  --accent-rose-deep: #C75B7A;      /* Velvet Berry: Authority & Decisiveness */
   
-  --accent-champagne: #F7D7B5;      /* Champagne Gold: Luxury, Prosperity & Prestige */
-  --accent-champagne-glow: rgba(247, 215, 181, 0.32);
-  
-  --accent-orchid: #C084FC;         /* Amethyst Orchid: Visionary Strategy & Depth */
-  --accent-orchid-glow: rgba(192, 132, 252, 0.32);
-  
-  --accent-berry: #F43F5E;          /* Radiant Berry: High Virality & Engagement */
-  --accent-cyan: #F472B6;           /* Harmonized TikTok Accent: Vibrant Rose Berry */
-  --accent-cyan-glow: rgba(244, 114, 182, 0.35);
+  --accent-champagne: #EBD3BE;      /* Champagne Gold: Luxury, Warmth & Prestige */
+  --accent-orchid: #B69AC9;         /* Amethyst Orchid: Visionary Strategy & Depth */
+  --accent-berry: #D9536F;          /* Radiant Berry */
+  --accent-cyan: #D47B95;           /* Cohesive Velvet Rose */
+
+  /* Realistic Multi-Layer Depth Shadows (No Neon Halos) */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 28px -6px rgba(0, 0, 0, 0.55), 0 4px 10px -2px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 56px -12px rgba(0, 0, 0, 0.75), 0 8px 18px -4px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 28px 65px -14px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --shadow-card-hover: 0 36px 85px -16px rgba(0, 0, 0, 0.92), inset 0 1px 0 rgba(255, 255, 255, 0.18);
   
   /* Font System - Apple SF Pro First (Slender & Elegant) */
   --font-primary: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
@@ -103,7 +104,7 @@ body {
 
 ::selection {
   background: var(--accent-rose);
-  color: #fff;
+  color: #120E16;
 }
 
 img {
@@ -131,10 +132,9 @@ a {
   left: 0;
   height: 2.5px;
   width: 0%;
-  background: linear-gradient(90deg, var(--accent-rose), var(--accent-orchid), var(--accent-champagne));
+  background: linear-gradient(90deg, var(--accent-rose), var(--accent-champagne));
   z-index: 1200;
   transition: width 0.08s linear;
-  box-shadow: 0 0 10px var(--accent-rose-glow);
 }
 
 /* ---------- Custom Smooth Cursor ---------- */
@@ -151,25 +151,25 @@ a {
   width: 6px;
   height: 6px;
   background: var(--accent-rose-soft);
-  box-shadow: 0 0 8px var(--accent-rose);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 .cursor-ring {
   width: 36px;
   height: 36px;
-  border: 1px solid rgba(255, 182, 205, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   transition: width 0.25s var(--ease-apple), height 0.25s var(--ease-apple), border-color 0.25s, background-color 0.25s;
 }
 .cursor-ring.is-hover {
-  width: 58px;
-  height: 58px;
+  width: 54px;
+  height: 54px;
   border-color: var(--accent-rose);
-  background: rgba(255, 122, 158, 0.08);
+  background: rgba(255, 255, 255, 0.04);
 }
 @media (hover: none) {
   .cursor-dot, .cursor-ring { display: none; }
 }
 
-/* ---------- Ambient Background Lighting (Mesh) ---------- */
+/* ---------- Ambient Background Lighting (Subtle Warmth) ---------- */
 .ambient-mesh {
   position: fixed;
   inset: 0;
@@ -180,28 +180,28 @@ a {
 .ambient-glow {
   position: absolute;
   border-radius: 50%;
-  filter: blur(140px);
-  opacity: 0.22;
+  filter: blur(180px);
+  opacity: 0.06;
 }
 .glow-1 {
-  width: 850px;
-  height: 850px;
-  background: radial-gradient(circle, var(--accent-rose-glow), transparent 70%);
-  top: -220px;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(229, 152, 168, 0.3), transparent 70%);
+  top: -240px;
   left: 50%;
   transform: translateX(-50%);
 }
 .glow-2 {
-  width: 750px;
-  height: 750px;
-  background: radial-gradient(circle, var(--accent-orchid-glow), transparent 70%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(182, 154, 201, 0.25), transparent 70%);
   bottom: 20%;
   right: -150px;
 }
 .glow-3 {
   width: 650px;
   height: 650px;
-  background: radial-gradient(circle, var(--accent-champagne-glow), transparent 70%);
+  background: radial-gradient(circle, rgba(235, 211, 190, 0.25), transparent 70%);
   top: 45%;
   left: -150px;
 }
@@ -223,16 +223,16 @@ a {
   align-items: center;
   gap: clamp(14px, 2vw, 32px);
   padding: 8px 12px 8px 22px;
-  background: rgba(19, 14, 26, 0.78);
+  background: rgba(19, 15, 25, 0.85);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   border: 1px solid var(--border-glass-bright);
   border-radius: 9999px;
-  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.75), 0 0 20px rgba(255, 122, 158, 0.08) inset;
+  box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transition: border-color 0.3s, background-color 0.3s;
 }
 .apple-nav-inner:hover {
-  border-color: rgba(255, 195, 215, 0.6);
+  border-color: rgba(255, 255, 255, 0.28);
 }
 .apple-brand {
   font-size: 14px;
@@ -249,7 +249,6 @@ a {
   height: 8px;
   border-radius: 50%;
   background: var(--accent-rose);
-  box-shadow: 0 0 12px var(--accent-rose);
 }
 .apple-links {
   display: flex;
@@ -272,14 +271,17 @@ a {
   font-weight: 700;
   padding: 8px 18px;
   border-radius: 9999px;
-  background: linear-gradient(135deg, #FFF0F5 0%, #FED7E2 100%);
-  color: #1A0817;
-  box-shadow: 0 4px 15px rgba(255, 122, 158, 0.3);
-  transition: transform 0.25s var(--ease-apple), box-shadow 0.25s;
+  background: #FAF6F8;
+  color: #120E16;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s var(--ease-apple), box-shadow 0.25s, background-color 0.25s;
 }
 .apple-nav-cta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 22px rgba(255, 122, 158, 0.5);
+  transform: scale(1.04);
+  background: #FFFFFF;
+  color: #0E0A12;
+  box-shadow: var(--shadow-md);
 }
 @media (max-width: 880px) {
   .apple-links { display: none; }
@@ -303,27 +305,30 @@ a {
   outline: none;
 }
 .btn-primary {
-  background: linear-gradient(135deg, #FFF0F5 0%, #FED7E2 40%, #FBCFE8 100%);
-  color: #180917;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 10px 25px -5px rgba(255, 122, 158, 0.35);
+  background: #FAF6F8;
+  color: #120E16;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-sm);
 }
 .btn-primary:hover {
-  transform: scale(1.04);
-  background: linear-gradient(135deg, #FFFFFF 0%, #FFF0F5 100%);
-  box-shadow: 0 18px 40px -8px rgba(255, 122, 158, 0.55), 0 0 20px rgba(247, 215, 181, 0.3);
+  transform: scale(1.03);
+  background: #FFFFFF;
+  color: #0E0A12;
+  box-shadow: var(--shadow-md);
 }
 .btn-glass {
-  background: rgba(255, 185, 205, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-primary);
   border: 1px solid var(--border-glass-bright);
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-sm);
 }
 .btn-glass:hover {
-  background: rgba(255, 185, 205, 0.16);
-  border-color: rgba(255, 195, 215, 0.6);
-  box-shadow: 0 10px 30px -5px rgba(255, 122, 158, 0.25);
-  transform: scale(1.04);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-md);
+  transform: scale(1.03);
 }
 .btn svg {
   width: 14px;
@@ -338,7 +343,7 @@ a {
 }
 
 /* ==========================================================================
-   TYPOGRAPHY & SECTION HEADINGS (Apple iPhone Pro Style & Soft Iridescent Motion)
+   TYPOGRAPHY & SECTION HEADINGS (Refined Metallic & Iridescent Motion)
    ========================================================================== */
 @keyframes appleGradientFlow {
   0% {
@@ -385,16 +390,15 @@ a {
   background: linear-gradient(
     115deg,
     #FFFFFF 0%,
-    #FED7E2 20%,
-    #FF85A2 40%,
-    #F7D7B5 60%,
-    #C084FC 80%,
+    #F5EAE6 25%,
+    #E598A8 50%,
+    #EBD3BE 75%,
     #FFFFFF 100%
   );
   background-size: 240% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: appleGradientFlow 7s ease-in-out infinite;
+  animation: appleGradientFlow 8s ease-in-out infinite;
   display: inline-block;
   padding-bottom: 0.24em;
   margin-bottom: -0.24em;
@@ -410,15 +414,14 @@ a {
   background: linear-gradient(
     115deg,
     #FFFFFF 0%,
-    #FF7A9E 25%,
-    #FBBFD0 50%,
-    #C084FC 75%,
+    #E598A8 30%,
+    #F3CCD5 60%,
     #FFFFFF 100%
   );
   background-size: 240% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: appleGradientFlow 7s ease-in-out infinite;
+  animation: appleGradientFlow 8s ease-in-out infinite;
   display: inline-block;
   padding-bottom: 0.24em;
   margin-bottom: -0.24em;
@@ -434,15 +437,14 @@ a {
   background: linear-gradient(
     115deg,
     #FFFFFF 0%,
-    #F472B6 25%,
-    #E879F9 50%,
-    #FF7A9E 75%,
+    #F5EAE6 25%,
+    #D47B95 55%,
     #FFFFFF 100%
   );
   background-size: 240% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: appleGradientFlow 7s ease-in-out infinite;
+  animation: appleGradientFlow 8s ease-in-out infinite;
   display: inline-block;
   padding-bottom: 0.24em;
   margin-bottom: -0.24em;
@@ -458,15 +460,14 @@ a {
   background: linear-gradient(
     115deg,
     #FFFFFF 0%,
-    #F7D7B5 25%,
-    #FF85A2 50%,
-    #F6D6BA 75%,
+    #EBD3BE 30%,
+    #E598A8 60%,
     #FFFFFF 100%
   );
   background-size: 240% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: appleGradientFlow 7s ease-in-out infinite;
+  animation: appleGradientFlow 8s ease-in-out infinite;
   display: inline-block;
   padding-bottom: 0.24em;
   margin-bottom: -0.24em;
@@ -527,7 +528,7 @@ a {
   gap: 10px;
   padding: 8px 20px;
   border-radius: 9999px;
-  background: rgba(255, 182, 205, 0.08);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-glass-bright);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -536,7 +537,7 @@ a {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent-rose-soft);
-  box-shadow: 0 8px 24px -6px rgba(255, 122, 158, 0.25);
+  box-shadow: var(--shadow-sm);
   margin-bottom: 26px;
 }
 .hero-pill-badge .dot {
@@ -544,7 +545,6 @@ a {
   height: 7px;
   border-radius: 50%;
   background: var(--accent-rose);
-  box-shadow: 0 0 10px var(--accent-rose);
 }
 .hero-headline {
   font-family: var(--font-display);
@@ -589,16 +589,16 @@ a {
   margin: 70px auto 0;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 122, 158, 0.08);
+  box-shadow: var(--shadow-lg);
 }
 .hero-spec-item {
-  background: rgba(20, 14, 28, 0.65);
+  background: rgba(18, 14, 24, 0.7);
   padding: 28px 20px;
   text-align: center;
   transition: background 0.3s;
 }
 .hero-spec-item:hover {
-  background: rgba(255, 182, 205, 0.06);
+  background: rgba(255, 255, 255, 0.03);
 }
 .hero-spec-item b {
   font-family: var(--font-display);
@@ -645,9 +645,9 @@ a {
   background: linear-gradient(90deg, transparent, var(--border-glass-bright), transparent);
 }
 
-/* Strategic Info Card Inside 3D Arc Deck (Apple Pro Motion Style) */
+/* Strategic Info Card Inside 3D Arc Deck */
 .arc-card.arc-info-card {
-  background: linear-gradient(180deg, rgba(32, 22, 44, 0.95) 0%, rgba(14, 10, 22, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(26, 20, 36, 0.96) 0%, rgba(14, 11, 19, 0.98) 100%);
   border: 1px solid var(--border-glass);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -655,6 +655,7 @@ a {
   overflow: hidden;
   position: relative;
   transition: transform 0.5s var(--ease-apple), border-color 0.4s, box-shadow 0.4s;
+  box-shadow: var(--shadow-card);
 }
 .arc-card.arc-info-card .arc-card-inner {
   padding: clamp(22px, 2.4vw, 28px) clamp(18px, 2vw, 24px);
@@ -669,34 +670,13 @@ a {
   display: none;
 }
 
-/* Ambient Radial Glow on Each Card */
-.arc-card.arc-info-card .arc-info-glow {
-  position: absolute;
-  top: 36%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--accent-rose-glow) 0%, transparent 70%);
-  opacity: 0.45;
-  pointer-events: none;
-  transition: opacity 0.5s, transform 0.5s;
-  filter: blur(25px);
-}
-.arc-card.arc-info-card:hover .arc-info-glow,
-.arc-card.arc-info-card.is-center .arc-info-glow {
-  opacity: 0.85;
-  transform: translate(-50%, -50%) scale(1.15);
-}
-
 .arc-card.arc-info-card:hover {
-  border-color: var(--border-glass-bright);
-  box-shadow: 0 40px 95px -15px rgba(0, 0, 0, 0.96), 0 0 45px var(--accent-rose-glow);
+  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow: var(--shadow-card-hover);
 }
 .arc-card.arc-info-card.is-center {
-  border-color: rgba(255, 195, 215, 0.55);
-  box-shadow: 0 40px 95px -15px rgba(0, 0, 0, 0.96), 0 0 50px var(--accent-rose-glow);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-card-hover);
 }
 
 /* Top Header */
@@ -732,7 +712,7 @@ a {
   margin-top: 3px;
 }
 
-/* Centerpiece 3D Motion Hero Stage (Dedicated Centered Area - Lowered & Balanced) */
+/* Centerpiece Stage */
 .arc-motion-hero {
   position: relative;
   display: flex;
@@ -747,36 +727,21 @@ a {
 
 .arc-orb-wrap {
   position: relative;
-  width: 86px;
-  height: 86px;
+  width: 76px;
+  height: 76px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Floating Pulsing Glow Rings - Contained & Concentric */
-.arc-orb-ring {
-  position: absolute;
-  inset: -5px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 182, 205, 0.28);
-  animation: arc-orb-pulse 3.8s ease-in-out infinite;
-  pointer-events: none;
-}
-.arc-orb-ring.ring-2 {
-  inset: -11px;
-  border-color: rgba(255, 182, 205, 0.14);
-  animation: arc-orb-pulse 3.8s ease-in-out infinite 1.9s;
-}
-
-/* Frosted Glass Floating Orb */
+/* Refined Frosted Glass Orb (No Neon) */
 .arc-orb {
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.28) 0%, rgba(255, 122, 158, 0.16) 45%, rgba(32, 20, 42, 0.9) 100%);
-  border: 1.5px solid rgba(255, 215, 230, 0.45);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.4), 0 0 24px var(--accent-rose-glow);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -789,19 +754,19 @@ a {
 
 .arc-card.arc-info-card:hover .arc-orb,
 .arc-card.arc-info-card.is-center .arc-orb {
-  transform: scale(1.08) translateY(-2px);
-  color: #ffffff;
-  border-color: #fff;
-  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.7), inset 0 2px 8px rgba(255, 255, 255, 0.6), 0 0 32px var(--accent-rose-glow);
+  transform: scale(1.06) translateY(-2px);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.75), inset 0 1px 1px rgba(255, 255, 255, 0.35);
 }
 
 .arc-orb svg {
-  width: 33px;
-  height: 33px;
+  width: 30px;
+  height: 30px;
   stroke-width: 1.75;
   fill: none;
   stroke: currentColor;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
   transition: transform 0.4s var(--ease-spring);
   margin: auto;
   display: block;
@@ -809,7 +774,7 @@ a {
 
 .arc-card.arc-info-card:hover .arc-orb svg,
 .arc-card.arc-info-card.is-center .arc-orb svg {
-  transform: scale(1.06) rotate(2deg);
+  transform: scale(1.05);
 }
 
 /* Lower Information Content Stage */
@@ -827,14 +792,14 @@ a {
 /* Category Tag */
 .arc-info-tag {
   font-size: 10.5px;
-  font-weight: 800;
-  letter-spacing: 0.18em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent-rose);
+  color: var(--accent-rose-soft);
   display: inline-block;
   margin-bottom: 10px;
-  background: rgba(255, 122, 158, 0.1);
-  border: 1px solid rgba(255, 122, 158, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 4px 13px;
   border-radius: 9999px;
 }
@@ -854,13 +819,13 @@ a {
 .arc-info-subtitle {
   font-size: 13px;
   line-height: 1.48;
-  color: rgba(250, 246, 248, 0.78);
+  color: var(--text-secondary);
   font-weight: 400;
   text-wrap: pretty;
   max-width: 320px;
 }
 
-/* Bento Key Delivery Pills in Footer (Refined & Vibrant) */
+/* Bento Key Delivery Pills in Footer */
 .arc-info-pills {
   display: flex;
   flex-wrap: wrap;
@@ -875,8 +840,8 @@ a {
   font-size: 10.5px;
   font-weight: 600;
   letter-spacing: 0.02em;
-  background: rgba(255, 182, 205, 0.09);
-  border: 1px solid rgba(255, 182, 205, 0.24);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 9999px;
   padding: 5px 12px;
   color: var(--text-primary);
@@ -886,29 +851,8 @@ a {
 }
 .arc-card.arc-info-card:hover .arc-info-pill,
 .arc-card.arc-info-card.is-center .arc-info-pill {
-  background: rgba(255, 182, 205, 0.16);
-  border-color: rgba(255, 182, 205, 0.45);
-}
-
-/* Keyframe Animations - Contained Floating & Pulsing */
-@keyframes arc-icon-float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-}
-
-@keyframes arc-orb-pulse {
-  0%, 100% {
-    transform: scale(0.96);
-    opacity: 0.35;
-  }
-  50% {
-    transform: scale(1.06);
-    opacity: 0.85;
-  }
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Keyframe Animations */
@@ -917,18 +861,7 @@ a {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes arc-orb-pulse {
-  0%, 100% {
-    transform: scale(0.95);
-    opacity: 0.35;
-  }
-  50% {
-    transform: scale(1.12);
-    opacity: 0.85;
+    transform: translateY(-5px);
   }
 }
 
@@ -976,21 +909,6 @@ a {
 .arc-stage.is-dragging {
   cursor: grabbing;
 }
-.arc-stage-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(900px, 92vw);
-  height: 480px;
-  background: radial-gradient(ellipse at center, var(--accent-rose-glow), transparent 70%);
-  filter: blur(60px);
-  pointer-events: none;
-  z-index: 0;
-}
-.arc-stage-glow.cyan-glow {
-  background: radial-gradient(ellipse at center, var(--accent-orchid-glow), transparent 70%);
-}
 
 .arc-track {
   display: flex;
@@ -1010,21 +928,21 @@ a {
   border-radius: 28px;
   position: relative;
   overflow: hidden;
-  background: rgba(26, 18, 34, 0.92);
+  background: rgba(22, 17, 30, 0.95);
   border: 1px solid var(--border-glass);
-  box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 182, 205, 0.06) inset;
+  box-shadow: var(--shadow-card);
   transform-origin: 50% 125%;
   transition: border-color 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple);
   cursor: pointer;
   will-change: transform, opacity;
 }
 .arc-card:hover {
-  border-color: var(--border-glass-bright);
-  box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.95), 0 0 38px var(--accent-rose-glow);
+  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow: var(--shadow-card-hover);
 }
 .arc-card.is-center {
-  border-color: rgba(255, 195, 215, 0.4);
-  box-shadow: 0 35px 80px -20px rgba(0, 0, 0, 0.9), 0 0 35px var(--accent-rose-glow);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-card-hover);
 }
 
 /* Horizontal Widescreen Cards for YouTube (16:9 Cinema Pro) */
@@ -1098,7 +1016,7 @@ a {
 .arc-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10, 8, 13, 0.3) 0%, rgba(10, 8, 13, 0.1) 40%, rgba(10, 8, 13, 0.94) 100%);
+  background: linear-gradient(180deg, rgba(11, 10, 14, 0.3) 0%, rgba(11, 10, 14, 0.1) 40%, rgba(11, 10, 14, 0.94) 100%);
   pointer-events: none;
 }
 
@@ -1108,17 +1026,17 @@ a {
   z-index: 3;
   align-self: flex-start;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 6px 14px;
   border-radius: 9999px;
-  background: rgba(22, 15, 30, 0.75);
+  background: rgba(18, 14, 25, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border-glass-bright);
   color: var(--accent-rose-soft);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-sm);
 }
 
 .arc-play-pill {
@@ -1132,14 +1050,15 @@ a {
   gap: 8px;
   padding: 10px 20px;
   border-radius: 9999px;
-  background: linear-gradient(135deg, #FFF0F5 0%, #FED7E2 100%);
-  color: #180917;
+  background: #FAF6F8;
+  color: #120E16;
+  border: 1px solid rgba(255, 255, 255, 0.9);
   font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.02em;
   opacity: 0;
-  transition: opacity 0.35s var(--ease-apple), transform 0.35s var(--ease-apple);
-  box-shadow: 0 14px 32px rgba(255, 122, 158, 0.4);
+  transition: opacity 0.35s var(--ease-apple), transform 0.35s var(--ease-apple), background-color 0.25s;
+  box-shadow: var(--shadow-md);
   pointer-events: none;
 }
 .arc-play-pill svg {
@@ -1159,7 +1078,7 @@ a {
 }
 .arc-card-tag {
   font-size: 11.5px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-rose);
@@ -1179,7 +1098,7 @@ a {
 .arc-card-desc {
   font-size: 13.5px;
   line-height: 1.48;
-  color: rgba(250, 246, 248, 0.75);
+  color: var(--text-secondary);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1224,7 +1143,7 @@ a {
   height: 44px;
   border-radius: 50%;
   border: 1px solid var(--border-glass-bright);
-  background: rgba(255, 185, 205, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-primary);
   display: inline-flex;
   align-items: center;
@@ -1232,14 +1151,15 @@ a {
   cursor: pointer;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-sm);
   transition: all 0.3s var(--ease-apple);
   outline: none;
 }
 .arc-btn:hover {
-  background: rgba(255, 185, 205, 0.2);
-  border-color: rgba(255, 195, 215, 0.6);
-  box-shadow: 0 0 20px rgba(255, 122, 158, 0.3);
-  transform: scale(1.06);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-md);
+  transform: scale(1.04);
 }
 .arc-btn svg {
   width: 16px;
@@ -1264,15 +1184,14 @@ a {
   width: 8px;
   height: 8px;
   border-radius: 9999px;
-  background: rgba(255, 182, 205, 0.2);
+  background: rgba(255, 255, 255, 0.15);
   border: 0;
   cursor: pointer;
   transition: all 0.35s var(--ease-apple);
 }
 .arc-dot.is-active {
   width: 32px;
-  background: linear-gradient(90deg, var(--accent-rose), var(--accent-orchid));
-  box-shadow: 0 0 10px var(--accent-rose-glow);
+  background: #FAF6F8;
 }
 
 /* ==========================================================================
@@ -1294,11 +1213,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: var(--shadow-sm);
   transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 .spec-item-card:hover {
   border-color: var(--border-glass-bright);
-  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 122, 158, 0.15);
+  box-shadow: var(--shadow-md);
   transform: translateY(-3px);
 }
 .spec-item-num {
@@ -1340,7 +1260,7 @@ a {
   text-align: center;
 }
 .contact-card {
-  background: linear-gradient(180deg, rgba(34, 23, 44, 0.65) 0%, rgba(16, 11, 24, 0.92) 100%);
+  background: linear-gradient(180deg, rgba(28, 20, 36, 0.85) 0%, rgba(14, 10, 20, 0.98) 100%);
   border: 1px solid var(--border-glass-bright);
   border-radius: 36px;
   padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 60px);
@@ -1348,13 +1268,13 @@ a {
   overflow: hidden;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 122, 158, 0.12);
+  box-shadow: var(--shadow-lg);
 }
 .contact-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 60% at 50% 0%, rgba(255, 122, 158, 0.22), transparent 70%);
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255, 255, 255, 0.06), transparent 70%);
   pointer-events: none;
 }
 .contact-headline {
@@ -1416,7 +1336,7 @@ footer {
   position: fixed;
   inset: 0;
   z-index: 2100;
-  background: rgba(10, 8, 13, 0.9);
+  background: rgba(11, 10, 14, 0.92);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   display: flex;
@@ -1436,11 +1356,11 @@ footer {
   width: 100%;
   max-width: 960px;
   max-height: 92vh;
-  background: rgba(24, 17, 32, 0.96);
+  background: rgba(20, 15, 28, 0.98);
   border: 1px solid var(--border-glass-bright);
   border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.95), 0 0 50px rgba(255, 122, 158, 0.15);
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.95);
   transform: scale(0.94) translateY(20px);
   transition: transform 0.4s var(--ease-apple), max-width 0.35s var(--ease-apple);
   display: flex;
@@ -1471,7 +1391,7 @@ footer {
   padding: 14px 18px;
   gap: 12px;
   border-bottom: 1px solid var(--border-glass);
-  background: rgba(20, 14, 26, 0.95);
+  background: rgba(18, 14, 25, 0.96);
   flex-shrink: 0;
   position: relative;
   z-index: 5;
@@ -1510,7 +1430,7 @@ footer {
   font-weight: 700;
   color: var(--text-primary);
   border: 1px solid var(--border-glass-bright);
-  background: rgba(255, 185, 205, 0.08);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 9999px;
   padding: 6px 13px;
   display: inline-flex;
@@ -1521,16 +1441,16 @@ footer {
   white-space: nowrap;
 }
 .arc-modal-link:hover {
-  background: rgba(255, 185, 205, 0.18);
-  border-color: rgba(255, 195, 215, 0.6);
-  box-shadow: 0 0 15px rgba(255, 122, 158, 0.25);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-sm);
 }
 .arc-modal-close {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 1px solid var(--border-glass-bright);
-  background: rgba(255, 185, 205, 0.08);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--text-primary);
   display: inline-flex;
   align-items: center;
@@ -1540,9 +1460,9 @@ footer {
   transition: all 0.25s;
 }
 .arc-modal-close:hover {
-  background: var(--accent-rose);
-  border-color: var(--accent-rose);
-  color: #fff;
+  background: #FAF6F8;
+  border-color: #FAF6F8;
+  color: #120E16;
   transform: rotate(90deg);
 }
 .arc-modal-close svg {
@@ -1556,7 +1476,7 @@ footer {
 .arc-modal-footer {
   display: none;
   padding: 12px 18px 14px;
-  background: rgba(20, 14, 26, 0.95);
+  background: rgba(18, 14, 25, 0.96);
   border-top: 1px solid var(--border-glass);
   align-items: center;
   justify-content: center;
@@ -1569,8 +1489,8 @@ footer {
   justify-content: center;
   padding: 10px 18px;
   font-size: 13px;
-  background: rgba(255, 185, 205, 0.12);
-  border-color: rgba(255, 185, 205, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-glass-bright);
 }
 
 /* When dialog is vertical: hide header button, show clean footer button */
@@ -1653,7 +1573,7 @@ footer {
 .arc-modal-player.is-info {
   aspect-ratio: auto;
   min-height: 380px;
-  background: linear-gradient(180deg, rgba(28, 19, 36, 0.98), rgba(12, 9, 16, 1));
+  background: linear-gradient(180deg, rgba(26, 20, 36, 0.98), rgba(12, 10, 16, 1));
   padding: clamp(28px, 4.5vw, 54px);
   display: flex;
   align-items: center;
@@ -1817,7 +1737,6 @@ footer {
   <!-- Full-Bleed 3D Arc Stage -->
   <div class="arc-carousel" data-arc-carousel id="arc-estrategia">
     <div class="arc-stage">
-      <div class="arc-stage-glow"></div>
       <div class="arc-track">
 
         <!-- Card 1: Liderança & Equipe -->
@@ -1828,7 +1747,6 @@ footer {
           data-metric="04 Especialistas Liderados"
           data-caption="Coordenação ativa de talentos criativos com processos ágeis e metas claras para garantir consistência e alto padrão em cada projeto."
           data-pills="<span class='arc-info-pill'>Metodologia Ágil</span><span class='arc-info-pill'>Direção Criativa</span><span class='arc-info-pill'>Prazo Rigoroso</span>">
-          <div class="arc-info-glow"></div>
           <div class="arc-card-inner">
             <div class="arc-info-header">
               <span class="arc-badge">01 · Equipe</span>
@@ -1837,8 +1755,6 @@ footer {
             
             <div class="arc-motion-hero">
               <div class="arc-orb-wrap">
-                <div class="arc-orb-ring"></div>
-                <div class="arc-orb-ring ring-2"></div>
                 <div class="arc-orb">
                   <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
@@ -1867,7 +1783,6 @@ footer {
           data-metric="+50% em 12 Meses"
           data-caption="Estratégia baseada em conteúdos que geram conexão genuína e autoridade, atraindo público qualificado sem depender de atalhos."
           data-pills="<span class='arc-info-pill'>Público Qualificado</span><span class='arc-info-pill'>Retenção Alta</span><span class='arc-info-pill'>Autoridade Real</span>">
-          <div class="arc-info-glow" style="background: radial-gradient(circle, rgba(255, 135, 170, 0.32) 0%, transparent 70%);"></div>
           <div class="arc-card-inner">
             <div class="arc-info-header">
               <span class="arc-badge">02 · Audiência</span>
@@ -1876,16 +1791,14 @@ footer {
             
             <div class="arc-motion-hero">
               <div class="arc-orb-wrap">
-                <div class="arc-orb-ring" style="border-color: rgba(255, 182, 205, 0.3);"></div>
-                <div class="arc-orb-ring ring-2" style="border-color: rgba(255, 182, 205, 0.15);"></div>
-                <div class="arc-orb" style="color: var(--accent-rose); box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), 0 0 25px var(--accent-rose-glow);">
+                <div class="arc-orb">
                   <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
                 </div>
               </div>
             </div>
 
             <div class="arc-info-body">
-              <span class="arc-info-tag" style="color: var(--accent-rose-soft); border-color: rgba(255, 182, 205, 0.3); background: rgba(255, 182, 205, 0.1);">Expansão &amp; Atração</span>
+              <span class="arc-info-tag">Expansão &amp; Atração</span>
               <h4 class="arc-info-title">Crescimento Orgânico Real &amp; Atração de Clientes</h4>
               <p class="arc-info-subtitle">Roteiros estratégicos que educam, geram desejo e convertem seguidores em clientes.</p>
             </div>
@@ -1906,7 +1819,6 @@ footer {
           data-metric="600+ Participantes"
           data-caption="Planejamento e coordenação impecável do início ao fim: estrutura de palco, iluminação, cronograma e atendimento para encantar cada participante."
           data-pills="<span class='arc-info-pill'>Estrutura &amp; Palco</span><span class='arc-info-pill'>Cenografia de Luxo</span><span class='arc-info-pill'>Experiência Única</span>">
-          <div class="arc-info-glow" style="background: radial-gradient(circle, var(--accent-champagne-glow) 0%, transparent 70%);"></div>
           <div class="arc-card-inner">
             <div class="arc-info-header">
               <span class="arc-badge">03 · Eventos</span>
@@ -1915,16 +1827,14 @@ footer {
             
             <div class="arc-motion-hero">
               <div class="arc-orb-wrap">
-                <div class="arc-orb-ring" style="border-color: rgba(247, 215, 181, 0.35);"></div>
-                <div class="arc-orb-ring ring-2" style="border-color: rgba(247, 215, 181, 0.18);"></div>
-                <div class="arc-orb" style="color: var(--accent-champagne); box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), 0 0 30px var(--accent-champagne-glow);">
+                <div class="arc-orb" style="color: var(--accent-champagne);">
                   <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                 </div>
               </div>
             </div>
 
             <div class="arc-info-body">
-              <span class="arc-info-tag" style="color: var(--accent-champagne); border-color: rgba(247, 215, 181, 0.3); background: rgba(247, 215, 181, 0.1);">Experiência de Marca</span>
+              <span class="arc-info-tag">Experiência de Marca</span>
               <h4 class="arc-info-title">Grandes Eventos &amp; Experiências Inesquecíveis</h4>
               <p class="arc-info-subtitle">Coordenação total do palco à recepção com som, iluminação e cronograma impecáveis.</p>
             </div>
@@ -1945,7 +1855,6 @@ footer {
           data-metric="4K Cinema Pro"
           data-caption="Produção de conteúdos visuais sofisticados com narrativa dinâmica e padrão cinematográfico que valorizam a percepção da sua marca."
           data-pills="<span class='arc-info-pill'>Roteiros Criativos</span><span class='arc-info-pill'>Edição Rítmica</span><span class='arc-info-pill'>Cinema 4K</span>">
-          <div class="arc-info-glow" style="background: radial-gradient(circle, var(--accent-orchid-glow) 0%, transparent 70%);"></div>
           <div class="arc-card-inner">
             <div class="arc-info-header">
               <span class="arc-badge">04 · Vídeo</span>
@@ -1954,16 +1863,14 @@ footer {
             
             <div class="arc-motion-hero">
               <div class="arc-orb-wrap">
-                <div class="arc-orb-ring" style="border-color: rgba(192, 132, 252, 0.35);"></div>
-                <div class="arc-orb-ring ring-2" style="border-color: rgba(192, 132, 252, 0.18);"></div>
-                <div class="arc-orb" style="color: var(--accent-orchid); box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), 0 0 30px var(--accent-orchid-glow);">
+                <div class="arc-orb" style="color: var(--accent-orchid);">
                   <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
                 </div>
               </div>
             </div>
 
             <div class="arc-info-body">
-              <span class="arc-info-tag" style="color: var(--accent-orchid); border-color: rgba(192, 132, 252, 0.3); background: rgba(192, 132, 252, 0.1);">Cinema &amp; Retenção</span>
+              <span class="arc-info-tag">Cinema &amp; Retenção</span>
               <h4 class="arc-info-title">Produção Audiovisual 4K com Estética de Cinema</h4>
               <p class="arc-info-subtitle">Vídeos modernos que prendem a atenção do primeiro ao último segundo.</p>
             </div>
@@ -1984,7 +1891,6 @@ footer {
           data-metric="5k+ Ao Vivo"
           data-caption="Direção técnica e suporte completo para lives e eventos digitais com áudio e imagem de estúdio, garantindo transmissão estável e engajamento."
           data-pills="<span class='arc-info-pill'>Zero Falhas</span><span class='arc-info-pill'>Áudio Impecável</span><span class='arc-info-pill'>Estúdio Digital</span>">
-          <div class="arc-info-glow" style="background: radial-gradient(circle, var(--accent-cyan-glow) 0%, transparent 70%);"></div>
           <div class="arc-card-inner">
             <div class="arc-info-header">
               <span class="arc-badge">05 · Ao Vivo</span>
@@ -1993,16 +1899,14 @@ footer {
             
             <div class="arc-motion-hero">
               <div class="arc-orb-wrap">
-                <div class="arc-orb-ring" style="border-color: rgba(244, 114, 182, 0.35);"></div>
-                <div class="arc-orb-ring ring-2" style="border-color: rgba(244, 114, 182, 0.18);"></div>
-                <div class="arc-orb" style="color: var(--accent-cyan); box-shadow: 0 16px 36px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), 0 0 30px var(--accent-cyan-glow);">
+                <div class="arc-orb" style="color: var(--accent-cyan);">
                   <svg viewBox="0 0 24 24"><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M7.76 7.76a6 6 0 0 0 0 8.48"/><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.48"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
                 </div>
               </div>
             </div>
 
             <div class="arc-info-body">
-              <span class="arc-info-tag" style="color: var(--accent-cyan); border-color: rgba(244, 114, 182, 0.3); background: rgba(244, 114, 182, 0.1);">Direção Técnica</span>
+              <span class="arc-info-tag">Direção Técnica</span>
               <h4 class="arc-info-title">Transmissões Ao Vivo 100% Seguras e Estáveis</h4>
               <p class="arc-info-subtitle">Estrutura de estúdio com múltiplos ângulos e áudio cristalino sem risco de quedas.</p>
             </div>
@@ -2023,7 +1927,6 @@ footer {
           data-metric="RAW Qualidade Editorial"
           data-caption="Retratos executivos e cobertura documental com iluminação precisa e tratamento de revista que elevam instantaneamente o prestígio da empresa."
           data-pills="<span class='arc-info-pill'>Retratos Pro</span><span class='arc-info-pill'>Tratamento Fino</span><span class='arc-info-pill'>Posicionamento</span>">
-          <div class="arc-info-glow" style="background: radial-gradient(circle, var(--accent-rose-glow) 0%, transparent 70%);"></div>
           <div class="arc-card-inner">
             <div class="arc-info-header">
               <span class="arc-badge">06 · Fotografia</span>
@@ -2032,8 +1935,6 @@ footer {
             
             <div class="arc-motion-hero">
               <div class="arc-orb-wrap">
-                <div class="arc-orb-ring"></div>
-                <div class="arc-orb-ring ring-2"></div>
                 <div class="arc-orb">
                   <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="14.31" y1="8" x2="20.05" y2="17.94"/><line x1="9.69" y1="8" x2="21.17" y2="8"/><line x1="7.38" y1="12" x2="13.12" y2="2.06"/><line x1="9.69" y1="16" x2="3.95" y2="6.06"/><line x1="14.31" y1="16" x2="2.83" y2="16"/><line x1="16.62" y1="12" x2="10.88" y2="21.94"/></svg>
                 </div>
@@ -2089,7 +1990,6 @@ footer {
   <!-- Giant 3D Arc Stage (100vw) -->
   <div class="arc-carousel reveal" data-arc-carousel id="arc-instagram">
     <div class="arc-stage">
-      <div class="arc-stage-glow"></div>
       <div class="arc-track">
         
         <!-- Reel 1: Aulão Presencial Manaus -->
@@ -2259,7 +2159,6 @@ footer {
   <!-- Giant 3D Arc Stage (100vw) -->
   <div class="arc-carousel reveal" data-arc-carousel id="arc-eventos">
     <div class="arc-stage">
-      <div class="arc-stage-glow"></div>
       <div class="arc-track">
         
         <!-- Event 1: Lançamento João Pessoa -->
@@ -2411,7 +2310,6 @@ footer {
   <!-- Giant 3D Arc Stage (100vw) - Horizontal Widescreen Cinema -->
   <div class="arc-carousel reveal" data-arc-carousel id="arc-youtube">
     <div class="arc-stage">
-      <div class="arc-stage-glow"></div>
       <div class="arc-track">
         
         <!-- YT 1 -->
@@ -2559,7 +2457,6 @@ footer {
   <!-- Giant 3D Arc Stage (100vw) -->
   <div class="arc-carousel reveal" data-arc-carousel id="arc-tiktok">
     <div class="arc-stage">
-      <div class="arc-stage-glow cyan-glow"></div>
       <div class="arc-track">
         
         <!-- TikTok 1: Experimento na Sala -->
@@ -2571,13 +2468,13 @@ footer {
               </video>
               <div class="arc-overlay"></div>
             </div>
-            <span class="arc-badge" style="color:var(--accent-cyan)">Viral · 509.6k</span>
+            <span class="arc-badge">Viral · 509.6k</span>
             <div class="arc-play-pill">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
               <span>Assistir TikTok</span>
             </div>
             <div class="arc-card-body">
-              <span class="arc-card-tag" style="color:var(--accent-cyan)">@superensino · Viral</span>
+              <span class="arc-card-tag">@superensino · Viral</span>
               <h4 class="arc-card-title">Experimento na Sala</h4>
               <p class="arc-card-desc">Mais de 509 mil visualizações naturais e milhares de&nbsp;compartilhamentos.</p>
             </div>
@@ -2593,13 +2490,13 @@ footer {
               </video>
               <div class="arc-overlay"></div>
             </div>
-            <span class="arc-badge" style="color:var(--accent-cyan)">Dia a Dia</span>
+            <span class="arc-badge">Dia a Dia</span>
             <div class="arc-play-pill">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
               <span>Assistir TikTok</span>
             </div>
             <div class="arc-card-body">
-              <span class="arc-card-tag" style="color:var(--accent-cyan)">@superensino · Cotidiano</span>
+              <span class="arc-card-tag">@superensino · Cotidiano</span>
               <h4 class="arc-card-title">Dia a Dia dos Professores</h4>
               <p class="arc-card-desc">Vídeos descontraídos que geram carinho e proximidade com o&nbsp;público.</p>
             </div>
@@ -2615,13 +2512,13 @@ footer {
               </video>
               <div class="arc-overlay"></div>
             </div>
-            <span class="arc-badge" style="color:var(--accent-cyan)">Consolida+</span>
+            <span class="arc-badge">Consolida+</span>
             <div class="arc-play-pill">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
               <span>Assistir TikTok</span>
             </div>
             <div class="arc-card-body">
-              <span class="arc-card-tag" style="color:var(--accent-cyan)">@superensino · Hit Musical</span>
+              <span class="arc-card-tag">@superensino · Hit Musical</span>
               <h4 class="arc-card-title">Clipe Consolida+</h4>
               <p class="arc-card-desc">Produção audiovisual dinâmica e envolvente que viralizou entre os&nbsp;alunos.</p>
             </div>
@@ -2637,13 +2534,13 @@ footer {
               </video>
               <div class="arc-overlay"></div>
             </div>
-            <span class="arc-badge" style="color:var(--accent-cyan)">Super Visitas</span>
+            <span class="arc-badge">Super Visitas</span>
             <div class="arc-play-pill">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
               <span>Assistir TikTok</span>
             </div>
             <div class="arc-card-body">
-              <span class="arc-card-tag" style="color:var(--accent-cyan)">@superensino · Presença Escolar</span>
+              <span class="arc-card-tag">@superensino · Presença Escolar</span>
               <h4 class="arc-card-title">Super Visitas</h4>
               <p class="arc-card-desc">Acompanhamento presencial nas escolas gerando forte conexão com a&nbsp;comunidade.</p>
             </div>
@@ -2685,7 +2582,6 @@ footer {
   <!-- Giant 3D Arc Stage (100vw) -->
   <div class="arc-carousel reveal" data-arc-carousel id="arc-fotografia">
     <div class="arc-stage">
-      <div class="arc-stage-glow"></div>
       <div class="arc-track">
         
         <!-- Photo 01 -->
