@@ -713,41 +713,56 @@ a {
   justify-content: center;
 }
 
-/* Atmospheric Studio Halo & Orbital Ring */
-.about-halo-glow {
-  position: absolute;
-  top: 12%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: clamp(340px, 36vw, 490px);
-  height: clamp(390px, 42vw, 550px);
-  background: radial-gradient(circle at 50% 40%, 
-    rgba(229, 152, 168, 0.3) 0%, 
-    rgba(235, 211, 190, 0.18) 35%, 
-    rgba(182, 154, 201, 0.09) 55%, 
-    transparent 72%
-  );
-  filter: blur(55px);
-  pointer-events: none;
-  z-index: 0;
-  transition: transform 0.6s var(--ease-apple), opacity 0.6s;
+/* Apple Keynote Stage: Authentic Photographic Studio Lighting (Sem Neon, Sem AI Look) */
+.about-media-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.about-halo-ring {
+.about-hero-portrait {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  height: clamp(540px, 48vw, 680px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Natural Photographic Studio Softbox Lighting (Luz Difusa de Estúdio Apple) */
+.about-studio-backlight {
   position: absolute;
   top: 14%;
   left: 50%;
   transform: translateX(-50%);
-  width: clamp(290px, 30vw, 430px);
-  height: clamp(290px, 30vw, 430px);
-  border-radius: 50%;
-  border: 1px solid rgba(229, 152, 168, 0.18);
-  background: radial-gradient(circle, rgba(229, 152, 168, 0.05) 0%, transparent 70%);
-  box-shadow: 0 0 50px rgba(229, 152, 168, 0.08), inset 0 0 40px rgba(229, 152, 168, 0.04);
+  width: clamp(380px, 42vw, 560px);
+  height: clamp(420px, 46vw, 600px);
+  background: radial-gradient(ellipse at 50% 36%, 
+    rgba(255, 255, 255, 0.07) 0%, 
+    rgba(240, 235, 245, 0.025) 42%, 
+    transparent 72%
+  );
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.6s var(--ease-apple);
+}
+
+/* Floor Reflection / Stage Soft Ambient */
+.about-stage-floor {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 36px;
+  background: radial-gradient(ellipse at 50% 100%, rgba(255, 255, 255, 0.035) 0%, transparent 75%);
   pointer-events: none;
   z-index: 0;
 }
 
-/* Silhouette Stage */
+/* Silhouette Stage with Natural Grounding */
 .about-portrait-stage {
   position: relative;
   z-index: 1;
@@ -756,8 +771,8 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 86%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 0%, black 86%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black 88%, transparent 100%);
 }
 .about-cutout-img {
   height: 100%;
@@ -765,16 +780,12 @@ a {
   max-width: 100%;
   object-fit: contain;
   object-position: bottom center;
-  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.88)) drop-shadow(0 0 40px rgba(229, 152, 168, 0.2));
-  transition: transform 0.6s var(--ease-apple), filter 0.6s var(--ease-apple);
+  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.92));
+  transition: transform 0.6s var(--ease-apple);
   display: block;
 }
 .about-hero-portrait:hover .about-cutout-img {
-  transform: scale(1.03) translateY(-4px);
-  filter: drop-shadow(0 30px 55px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 55px rgba(229, 152, 168, 0.3));
-}
-.about-hero-portrait:hover .about-halo-glow {
-  transform: translateX(-50%) scale(1.08);
+  transform: scale(1.02) translateY(-3px);
 }
 
 @media (max-width: 980px) {
@@ -1897,14 +1908,14 @@ footer {
         </div>
       </div>
 
-      <!-- Coluna Direita: Foto em Destaque Livre e Cinematográfico (Sem Caixa) -->
+      <!-- Coluna Direita: Foto em Destaque Executivo Estilo Apple (Sem Neon) -->
       <div class="about-media-col reveal">
         <div class="about-hero-portrait">
-          <!-- Halo e luz ambiente cinematográfica de estúdio -->
-          <div class="about-halo-glow"></div>
-          <div class="about-halo-ring"></div>
+          <!-- Luz de estúdio fotográfico realista (softbox difusa neutra) -->
+          <div class="about-studio-backlight"></div>
+          <div class="about-stage-floor"></div>
 
-          <!-- Silhueta em destaque livre, sem caixas ou bordas -->
+          <!-- Silhueta fotográfica em destaque puro e limpo -->
           <div class="about-portrait-stage">
             <img class="about-cutout-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Estratégia de Marketing e Audiovisual" width="946" height="1967" loading="eager" decoding="async">
           </div>
