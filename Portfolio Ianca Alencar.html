@@ -27,10 +27,11 @@
 <meta name="twitter:image" content="https://portfolio-ianca-alencar.vercel.app/assets/og-image.jpg">
 <meta name="theme-color" content="#0A080D">
 
-<link rel="preload" as="image" href="assets/perfil-ianca.webp" type="image/webp">
+<link rel="preload" as="image" href="assets/perfil-ianca.webp" type="image/webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 <style>
 /* ==========================================================================
    HIGH-TIER EXECUTIVE LUXURY DESIGN SYSTEM (Rose Gold, Silk Obsidian & Champagne)
@@ -1911,7 +1912,7 @@ footer {
           <div class="about-portrait-stage">
             <picture class="about-cutout-picture">
               <source srcset="assets/perfil-ianca.webp" type="image/webp">
-              <img class="about-cutout-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Estratégia de Marketing e Audiovisual" width="946" height="1967" loading="eager" decoding="async">
+              <img class="about-cutout-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Estratégia de Marketing e Audiovisual" width="946" height="1967" loading="eager" fetchpriority="high" decoding="async">
             </picture>
           </div>
         </div>
