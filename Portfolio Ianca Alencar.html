@@ -626,10 +626,10 @@ a {
 }
 
 /* ==========================================================================
-   02. ABOUT SECTION (Executive Profile & Editorial Story)
+   02. ABOUT SECTION (Executive Positioning & High-Conversion Profile)
    ========================================================================== */
 .about-section {
-  padding: clamp(80px, 9vw, 140px) 0;
+  padding: clamp(70px, 8vw, 120px) 0;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -645,115 +645,152 @@ a {
 }
 .about-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: clamp(36px, 5vw, 72px);
+  grid-template-columns: 1.16fr 0.84fr;
+  gap: clamp(36px, 4.5vw, 64px);
   align-items: center;
 }
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .about-header {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
-.about-bio-body {
-  font-size: clamp(15px, 1.2vw, 16.5px);
-  line-height: 1.75;
-  color: var(--text-secondary);
+.about-header .apple-section-title {
+  font-size: clamp(26px, 2.8vw, 38px);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
 }
-.about-bio-body p + p {
-  margin-top: 16px;
-}
-.about-bio-body strong {
-  color: var(--text-primary);
-  font-weight: 600;
+.about-pitch {
+  margin-bottom: 20px;
 }
 .about-lead {
-  font-size: clamp(17px, 1.4vw, 20px) !important;
-  line-height: 1.62 !important;
-  color: var(--text-primary) !important;
-  font-weight: 400;
-}
-.about-quote-box {
-  margin: 26px 0 28px;
-  padding: 18px 22px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, rgba(229, 152, 168, 0.08) 0%, rgba(182, 154, 201, 0.04) 100%);
-  border: 1px solid rgba(229, 152, 168, 0.22);
-  border-left: 4px solid var(--accent-rose);
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-.about-quote-icon {
-  width: 22px;
-  height: 22px;
-  fill: var(--accent-rose);
-  flex-shrink: 0;
-  margin-top: 3px;
-  opacity: 0.9;
-}
-.about-quote-text {
-  font-size: 15px;
-  font-style: italic;
-  color: #FAF6F8 !important;
-  line-height: 1.55;
-  margin: 0 !important;
-  font-weight: 500;
-}
-.about-pillars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 26px;
-}
-.about-pillar-card {
-  padding: 18px 20px;
-  border-radius: 20px;
-  background: rgba(24, 18, 30, 0.65);
-  border: 1px solid var(--border-glass);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  transition: border-color 0.3s var(--ease-apple), transform 0.3s var(--ease-apple), background-color 0.3s;
-}
-.about-pillar-card:hover {
-  border-color: rgba(229, 152, 168, 0.35);
-  background: rgba(34, 25, 42, 0.85);
-  transform: translateY(-3px);
-}
-.about-pillar-num {
-  font-size: 12px;
-  font-weight: 800;
-  color: var(--accent-rose);
-  letter-spacing: 0.08em;
-  margin-bottom: 6px;
-  font-family: var(--font-display);
-}
-.about-pillar-info h4 {
-  font-size: 14.5px;
-  font-weight: 700;
+  font-size: clamp(15.5px, 1.15vw, 17px);
+  line-height: 1.62;
   color: var(--text-primary);
-  margin-bottom: 5px;
-  letter-spacing: -0.01em;
+  font-weight: 400;
+  margin-bottom: 12px;
 }
-.about-pillar-info p {
-  font-size: 12.5px;
+.about-lead strong,
+.about-subtext strong {
+  color: #FAF6F8;
+  font-weight: 600;
+}
+.about-subtext {
+  font-size: clamp(14px, 1.05vw, 15px);
+  line-height: 1.62;
   color: var(--text-secondary);
-  line-height: 1.48;
-  margin: 0;
 }
 
-/* Prominent Portrait Card */
+/* 3 Soluções para a Dor do Cliente */
+.about-value-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.about-value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 11px 15px;
+  border-radius: 14px;
+  background: rgba(22, 17, 28, 0.6);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.25s var(--ease-apple), background-color 0.25s;
+}
+.about-value-item:hover {
+  border-color: rgba(229, 152, 168, 0.3);
+  background: rgba(30, 22, 38, 0.75);
+}
+.about-value-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: rgba(229, 152, 168, 0.12);
+  border: 1px solid rgba(229, 152, 168, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-rose);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.about-value-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+.about-value-text strong {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #FAF6F8;
+  margin-bottom: 2px;
+  letter-spacing: -0.01em;
+}
+.about-value-text span {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  display: block;
+}
+
+/* Linha de Ação & Fechamento */
+.about-action-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.about-action-btn {
+  padding: 12px 24px;
+  font-size: 13.5px;
+  gap: 8px;
+}
+.about-badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+.status-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ADE80;
+  box-shadow: 0 0 10px #4ADE80;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* Frame da Imagem de Perfil em Destaque Absoluto (Sem Obstrução) */
+.about-media-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about-portrait-card {
   position: relative;
-  border-radius: 36px;
-  background: radial-gradient(circle at 50% 25%, rgba(42, 30, 56, 0.65) 0%, rgba(14, 11, 19, 0.95) 75%);
+  width: 100%;
+  max-width: 440px;
+  height: 550px;
+  border-radius: 32px;
+  background: radial-gradient(circle at 50% 25%, rgba(46, 32, 60, 0.65) 0%, rgba(13, 10, 17, 0.98) 75%);
   border: 1px solid var(--border-glass-bright);
   box-shadow: var(--shadow-card), 0 0 60px rgba(229, 152, 168, 0.08);
   overflow: hidden;
-  padding: 36px 24px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  min-height: 580px;
+  align-items: flex-end;
+  justify-content: center;
   transition: border-color 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple);
 }
 .about-portrait-card:hover {
@@ -765,8 +802,8 @@ a {
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
-  height: 400px;
+  width: 290px;
+  height: 380px;
   background: radial-gradient(circle, rgba(229, 152, 168, 0.32) 0%, rgba(182, 154, 201, 0.18) 45%, transparent 72%);
   filter: blur(50px);
   pointer-events: none;
@@ -776,123 +813,49 @@ a {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 440px;
-  margin: 0 auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 .about-portrait-img {
-  width: 100%;
-  height: auto;
-  max-height: 580px;
+  height: 98%;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
   object-position: bottom center;
-  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.8)) drop-shadow(0 4px 14px rgba(229, 152, 168, 0.15));
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.85)) drop-shadow(0 4px 14px rgba(229, 152, 168, 0.15));
   transition: transform 0.5s var(--ease-apple);
   pointer-events: auto;
+  display: block;
 }
 .about-portrait-card:hover .about-portrait-img {
-  transform: scale(1.02) translateY(-4px);
+  transform: scale(1.02);
 }
-.about-badge-top {
+.about-portrait-ground {
   position: absolute;
-  top: 24px;
-  left: 24px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: linear-gradient(to top, rgba(13, 10, 17, 0.85) 0%, transparent 100%);
+  pointer-events: none;
   z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  padding: 7px 16px;
-  border-radius: 9999px;
-  background: rgba(18, 14, 24, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--border-glass-bright);
-  font-size: 11.5px;
-  font-weight: 600;
-  color: var(--accent-rose-soft);
-  letter-spacing: 0.02em;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
-.about-badge-pulse {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #4ADE80;
-  box-shadow: 0 0 10px #4ADE80;
-}
-.about-caption-card {
-  position: absolute;
-  bottom: 22px;
-  left: 22px;
-  right: 22px;
-  z-index: 2;
-  padding: 18px 22px;
-  border-radius: 22px;
-  background: rgba(16, 12, 22, 0.88);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
-}
-.about-caption-name {
-  font-size: 18px;
-  font-weight: 700;
-  color: #FAF6F8;
-  font-family: var(--font-display);
-  letter-spacing: -0.01em;
-}
-.about-caption-role {
-  font-size: 12.5px;
-  color: var(--accent-rose-soft);
-  margin-top: 3px;
-  font-weight: 500;
-}
-.about-caption-tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-.about-caption-tags span {
-  font-size: 11px;
-  font-weight: 600;
-  padding: 3px 10px;
-  border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--border-glass);
-  color: var(--text-secondary);
-}
+
 @media (max-width: 980px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 40px;
   }
   .about-media-col {
     order: -1;
-    max-width: 520px;
+    max-width: 440px;
     margin: 0 auto;
     width: 100%;
   }
   .about-portrait-card {
-    min-height: 480px;
-  }
-  .about-portrait-img {
-    max-height: 460px;
-  }
-}
-@media (max-width: 600px) {
-  .about-pillars {
-    grid-template-columns: 1fr;
-  }
-  .about-caption-card {
-    position: static;
-    margin: 16px 0 0;
-    width: 100%;
-  }
-  .about-portrait-card {
-    padding-bottom: 20px;
+    height: 480px;
   }
 }
 
@@ -1965,102 +1928,91 @@ footer {
 </header>
 
 <!-- ==========================================================================
-     02. SOBRE MIM (Perfil & Trajetória — Ianca Alencar)
+     02. SOBRE MIM (Posicionamento Executivo & Estratégia)
      ========================================================================== -->
 <section class="about-section" id="sobre">
   <div class="wrap">
     <div class="about-grid">
-      <!-- Coluna Esquerda: Texto Diagramado & Trajetória -->
+      <!-- Coluna Esquerda: Apresentação Estratégica & Psicologia de Decisão -->
       <div class="about-content reveal">
         <div class="about-header">
           <span class="apple-eyebrow">
-            <span class="apple-eyebrow-accent">Sobre Mim</span> · Perfil &amp; Trajetória
+            <span class="apple-eyebrow-accent">Posicionamento Executivo</span> · Sobre Mim
           </span>
           <h2 class="apple-section-title">
-            Estratégia, criatividade e visão:<br>
-            <span class="apple-title-gradient">construindo narrativas que conectam.</span>
+            Comunicação que conecta,<br>
+            <span class="apple-title-gradient">estratégia que gera negócios.</span>
           </h2>
         </div>
 
-        <div class="about-bio-body">
+        <div class="about-pitch">
           <p class="about-lead">
-            Me chamo <strong>Ianca Alencar</strong> e sou apaixonada por tudo que envolve imagem, criação e contar histórias de forma visual.
+            Me chamo <strong>Ianca Alencar</strong> e atuo na união estratégica entre <strong>marketing, direção audiovisual e design</strong>. Minha missão é tirar sua marca do comum e transformá-la em uma referência visual marcante que gera conexão e resultados reais.
           </p>
-          <p>
-            Minha trajetória teve início na fotografia em 2019, passando pela fotografia política e pela gerência de produção em estúdio audiovisual.
+          <p class="about-subtext">
+            Com trajetória desde 2019 — passando por estúdio audiovisual, fotografia política e coordenação de grandes eventos —, sei que <strong>estética sem estratégia é apenas custo</strong>. Por isso, combino planejamento de conteúdo, roteiros orientados à conversão e processos ágeis com Inteligência Artificial para entregar alto padrão e impacto mensurável.
           </p>
-          <p>
-            Hoje, atuo com <strong>gestão de marketing</strong>, abrangendo planejamento de conteúdo para redes sociais, criação de roteiros, desenvolvimento de campanhas e gestão de eventos.
-          </p>
-          <p>
-            Trabalho também com <strong>design gráfico e editorial</strong>, unindo autonomia criativa, visão estratégica de negócios e o uso prático de <strong>Inteligência Artificial</strong>. Como estudante de <strong>Publicidade e Propaganda no IFAM</strong>, busco constantemente traduzir ideias em identidades visuais marcantes e estratégias de comunicação que geram conexão real.
-          </p>
-          <div class="about-quote-box">
-            <svg class="about-quote-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
-            <p class="about-quote-text">
-              “Gosto de desafios, de experimentar coisas novas e de transformar conceitos em algo visualmente impactante.”
-            </p>
+        </div>
+
+        <!-- 3 Pilares com foco na Dor do Cliente -->
+        <div class="about-value-strip">
+          <div class="about-value-item">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div class="about-value-text">
+              <strong>Visão 360° &amp; Roteiros Estratégicos</strong>
+              <span>Do planejamento à campanha final, conteúdos pensados para atrair e converter clientes de verdade.</span>
+            </div>
+          </div>
+
+          <div class="about-value-item">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></svg>
+            </div>
+            <div class="about-value-text">
+              <strong>Audiovisual &amp; Design de Alto Padrão</strong>
+              <span>Identidade visual marcante e produções que elevam imediatamente a autoridade percebida da sua marca.</span>
+            </div>
+          </div>
+
+          <div class="about-value-item">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg>
+            </div>
+            <div class="about-value-text">
+              <strong>Agilidade com Inteligência Artificial</strong>
+              <span>Autonomia criativa, inovação prática e processos organizados para entregas rigorosas no prazo.</span>
+            </div>
           </div>
         </div>
 
-        <!-- Grade Diagramada de Competências -->
-        <div class="about-pillars">
-          <div class="about-pillar-card">
-            <div class="about-pillar-num">01</div>
-            <div class="about-pillar-info">
-              <h4>Fotografia &amp; Produção</h4>
-              <p>Experiência desde 2019, fotografia política e gestão de estúdio audiovisual.</p>
-            </div>
-          </div>
-          <div class="about-pillar-card">
-            <div class="about-pillar-num">02</div>
-            <div class="about-pillar-info">
-              <h4>Marketing &amp; Eventos</h4>
-              <p>Planejamento de conteúdo, criação de roteiros, campanhas e gestão de eventos.</p>
-            </div>
-          </div>
-          <div class="about-pillar-card">
-            <div class="about-pillar-num">03</div>
-            <div class="about-pillar-info">
-              <h4>Design Gráfico &amp; IA</h4>
-              <p>Design editorial, identidades visuais marcantes e inovação com IA.</p>
-            </div>
-          </div>
-          <div class="about-pillar-card">
-            <div class="about-pillar-num">04</div>
-            <div class="about-pillar-info">
-              <h4>Formação Publicitária</h4>
-              <p>Graduanda em Publicidade e Propaganda pelo IFAM com foco em resultados reais.</p>
-            </div>
+        <!-- Linha de Ação & Fechamento com Gatilho de Disponibilidade -->
+        <div class="about-action-row">
+          <a class="btn btn-primary about-action-btn" href="https://wa.me/5592984195456?text=Ol%C3%A1%2C%20Ianca!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">
+            Falar com Ianca
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <div class="about-badge-status">
+            <span class="status-pulse-dot"></span>
+            <span>Disponível para novos projetos</span>
           </div>
         </div>
       </div>
 
-      <!-- Coluna Direita: Imagem de Destaque Grande -->
+      <!-- Coluna Direita: Foto em Destaque Absoluto (Sem Obstruções) -->
       <div class="about-media-col reveal">
         <div class="about-portrait-card">
-          <!-- Aura luminosa suave em degradê -->
+          <!-- Aura luminosa suave de estúdio -->
           <div class="about-portrait-aura"></div>
+
+          <!-- Imagem de Perfil sem nenhum badge ou card tapando o corpo/rosto -->
           <div class="about-portrait-frame">
-            <img class="about-portrait-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Perfil Profissional" width="946" height="1967" loading="eager" decoding="async">
+            <img class="about-portrait-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Estratégia de Marketing e Audiovisual" width="946" height="1967" loading="eager" decoding="async">
           </div>
 
-          <!-- Badge flutuante IFAM -->
-          <div class="about-badge-top">
-            <span class="about-badge-pulse"></span>
-            <span>IFAM · Publicidade e Propaganda</span>
-          </div>
-
-          <!-- Card de identificação executiva -->
-          <div class="about-caption-card">
-            <div class="about-caption-name">Ianca Alencar</div>
-            <div class="about-caption-role">Gestão de Marketing · Audiovisual · Design</div>
-            <div class="about-caption-tags">
-              <span>Estratégia</span>
-              <span>Direção Criativa</span>
-              <span>Eventos</span>
-            </div>
-          </div>
+          <!-- Suave base de aterramento em degradê -->
+          <div class="about-portrait-ground"></div>
         </div>
       </div>
     </div>
