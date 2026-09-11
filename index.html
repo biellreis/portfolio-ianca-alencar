@@ -626,10 +626,10 @@ a {
 }
 
 /* ==========================================================================
-   02. ABOUT SECTION (Executive Positioning & High-Conversion Profile)
+   02. ABOUT SECTION (Executive Positioning & Unboxed Portrait Showcase)
    ========================================================================== */
 .about-section {
-  padding: clamp(70px, 8vw, 120px) 0;
+  padding: clamp(80px, 9vw, 140px) 0;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -645,33 +645,45 @@ a {
 }
 .about-grid {
   display: grid;
-  grid-template-columns: 1.16fr 0.84fr;
-  gap: clamp(36px, 4.5vw, 64px);
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(36px, 5vw, 72px);
   align-items: center;
 }
 .about-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 620px;
 }
 .about-header {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
-.about-header .apple-section-title {
-  font-size: clamp(26px, 2.8vw, 38px);
-  line-height: 1.18;
-  letter-spacing: -0.02em;
-  margin-top: 8px;
+.about-title {
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+  margin-top: 10px;
+  text-wrap: balance;
+}
+.about-title-line2 {
+  white-space: nowrap;
+  display: inline-block;
+}
+@media (max-width: 640px) {
+  .about-title-line2 {
+    white-space: normal;
+  }
 }
 .about-pitch {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .about-lead {
-  font-size: clamp(15.5px, 1.15vw, 17px);
-  line-height: 1.62;
+  font-size: clamp(16px, 1.2vw, 18px);
+  line-height: 1.68;
   color: var(--text-primary);
   font-weight: 400;
-  margin-bottom: 12px;
 }
 .about-lead strong,
 .about-subtext strong {
@@ -679,183 +691,113 @@ a {
   font-weight: 600;
 }
 .about-subtext {
-  font-size: clamp(14px, 1.05vw, 15px);
-  line-height: 1.62;
+  font-size: clamp(15px, 1.1vw, 16.5px);
+  line-height: 1.72;
   color: var(--text-secondary);
 }
 
-/* 3 Soluções para a Dor do Cliente */
-.about-value-strip {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 24px;
-}
-.about-value-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 11px 15px;
-  border-radius: 14px;
-  background: rgba(22, 17, 28, 0.6);
-  border: 1px solid var(--border-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: border-color 0.25s var(--ease-apple), background-color 0.25s;
-}
-.about-value-item:hover {
-  border-color: rgba(229, 152, 168, 0.3);
-  background: rgba(30, 22, 38, 0.75);
-}
-.about-value-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
-  background: rgba(229, 152, 168, 0.12);
-  border: 1px solid rgba(229, 152, 168, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent-rose);
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-.about-value-icon svg {
-  width: 16px;
-  height: 16px;
-  stroke: currentColor;
-  stroke-width: 2;
-  fill: none;
-}
-.about-value-text strong {
-  display: block;
-  font-size: 13.5px;
-  font-weight: 700;
-  color: #FAF6F8;
-  margin-bottom: 2px;
-  letter-spacing: -0.01em;
-}
-.about-value-text span {
-  font-size: 12.5px;
-  color: var(--text-secondary);
-  line-height: 1.45;
-  display: block;
-}
-
-/* Linha de Ação & Fechamento */
-.about-action-row {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-.about-action-btn {
-  padding: 12px 24px;
-  font-size: 13.5px;
-  gap: 8px;
-}
-.about-badge-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12.5px;
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-.status-pulse-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #4ADE80;
-  box-shadow: 0 0 10px #4ADE80;
-  display: inline-block;
-  flex-shrink: 0;
-}
-
-/* Frame da Imagem de Perfil em Destaque Absoluto (Sem Obstrução) */
+/* Grand Unboxed Portrait Showcase (Livre da Caixa, Impacto Máximo) */
 .about-media-col {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.about-portrait-card {
+.about-hero-portrait {
   position: relative;
   width: 100%;
-  max-width: 440px;
-  height: 550px;
-  border-radius: 32px;
-  background: radial-gradient(circle at 50% 25%, rgba(46, 32, 60, 0.65) 0%, rgba(13, 10, 17, 0.98) 75%);
-  border: 1px solid var(--border-glass-bright);
-  box-shadow: var(--shadow-card), 0 0 60px rgba(229, 152, 168, 0.08);
-  overflow: hidden;
+  max-width: 520px;
+  height: clamp(540px, 48vw, 670px);
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  transition: border-color 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple);
 }
-.about-portrait-card:hover {
-  border-color: rgba(229, 152, 168, 0.38);
-  box-shadow: var(--shadow-card-hover), 0 0 80px rgba(229, 152, 168, 0.16);
-}
-.about-portrait-aura {
+
+/* Atmospheric Studio Halo & Orbital Ring */
+.about-halo-glow {
   position: absolute;
-  top: 15%;
+  top: 12%;
   left: 50%;
   transform: translateX(-50%);
-  width: 290px;
-  height: 380px;
-  background: radial-gradient(circle, rgba(229, 152, 168, 0.32) 0%, rgba(182, 154, 201, 0.18) 45%, transparent 72%);
-  filter: blur(50px);
+  width: clamp(340px, 36vw, 490px);
+  height: clamp(390px, 42vw, 550px);
+  background: radial-gradient(circle at 50% 40%, 
+    rgba(229, 152, 168, 0.3) 0%, 
+    rgba(235, 211, 190, 0.18) 35%, 
+    rgba(182, 154, 201, 0.09) 55%, 
+    transparent 72%
+  );
+  filter: blur(55px);
+  pointer-events: none;
+  z-index: 0;
+  transition: transform 0.6s var(--ease-apple), opacity 0.6s;
+}
+.about-halo-ring {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(290px, 30vw, 430px);
+  height: clamp(290px, 30vw, 430px);
+  border-radius: 50%;
+  border: 1px solid rgba(229, 152, 168, 0.18);
+  background: radial-gradient(circle, rgba(229, 152, 168, 0.05) 0%, transparent 70%);
+  box-shadow: 0 0 50px rgba(229, 152, 168, 0.08), inset 0 0 40px rgba(229, 152, 168, 0.04);
   pointer-events: none;
   z-index: 0;
 }
-.about-portrait-frame {
+
+/* Silhouette Stage */
+.about-portrait-stage {
   position: relative;
   z-index: 1;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 86%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black 86%, transparent 100%);
 }
-.about-portrait-img {
-  height: 98%;
+.about-cutout-img {
+  height: 100%;
   width: auto;
   max-width: 100%;
   object-fit: contain;
   object-position: bottom center;
-  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.85)) drop-shadow(0 4px 14px rgba(229, 152, 168, 0.15));
-  transition: transform 0.5s var(--ease-apple);
-  pointer-events: auto;
+  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.88)) drop-shadow(0 0 40px rgba(229, 152, 168, 0.2));
+  transition: transform 0.6s var(--ease-apple), filter 0.6s var(--ease-apple);
   display: block;
 }
-.about-portrait-card:hover .about-portrait-img {
-  transform: scale(1.02);
+.about-hero-portrait:hover .about-cutout-img {
+  transform: scale(1.03) translateY(-4px);
+  filter: drop-shadow(0 30px 55px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 55px rgba(229, 152, 168, 0.3));
 }
-.about-portrait-ground {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 48px;
-  background: linear-gradient(to top, rgba(13, 10, 17, 0.85) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: 2;
+.about-hero-portrait:hover .about-halo-glow {
+  transform: translateX(-50%) scale(1.08);
 }
 
 @media (max-width: 980px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 48px;
+    text-align: center;
+  }
+  .about-content {
+    max-width: 100%;
+    align-items: center;
+  }
+  .about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about-media-col {
     order: -1;
-    max-width: 440px;
-    margin: 0 auto;
-    width: 100%;
   }
-  .about-portrait-card {
-    height: 480px;
+  .about-hero-portrait {
+    height: clamp(450px, 70vw, 560px);
+    max-width: 440px;
   }
 }
 
@@ -1939,80 +1881,33 @@ footer {
           <span class="apple-eyebrow">
             <span class="apple-eyebrow-accent">Posicionamento Executivo</span> · Sobre Mim
           </span>
-          <h2 class="apple-section-title">
+          <h2 class="apple-section-title about-title">
             Comunicação que conecta,<br>
-            <span class="apple-title-gradient">estratégia que gera negócios.</span>
+            <span class="apple-title-gradient about-title-line2">estratégia que gera negócios.</span>
           </h2>
         </div>
 
         <div class="about-pitch">
           <p class="about-lead">
-            Me chamo <strong>Ianca Alencar</strong> e atuo na união estratégica entre <strong>marketing, direção audiovisual e design</strong>. Minha missão é tirar sua marca do comum e transformá-la em uma referência visual marcante que gera conexão e resultados reais.
+            Me chamo <strong>Ianca Alencar</strong> e uno <strong>estratégia de marketing, direção audiovisual e design</strong> para posicionar marcas com autoridade e gerar resultados reais no mercado.
           </p>
           <p class="about-subtext">
-            Com trajetória desde 2019 — passando por estúdio audiovisual, fotografia política e coordenação de grandes eventos —, sei que <strong>estética sem estratégia é apenas custo</strong>. Por isso, combino planejamento de conteúdo, roteiros orientados à conversão e processos ágeis com Inteligência Artificial para entregar alto padrão e impacto mensurável.
+            Minha caminhada começou na fotografia em 2019, passando pela cobertura política, pela coordenação de estúdio e pela produção de grandes eventos com milhares de pessoas. Aprendi na prática que uma imagem bonita só funciona de verdade quando existe uma estratégia clara por trás. Hoje, uno planejamento, roteiros eficientes e o uso prático de Inteligência Artificial para entregar trabalhos ágeis, modernos e com alto impacto visual.
           </p>
-        </div>
-
-        <!-- 3 Pilares com foco na Dor do Cliente -->
-        <div class="about-value-strip">
-          <div class="about-value-item">
-            <div class="about-value-icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
-            <div class="about-value-text">
-              <strong>Visão 360° &amp; Roteiros Estratégicos</strong>
-              <span>Do planejamento à campanha final, conteúdos pensados para atrair e converter clientes de verdade.</span>
-            </div>
-          </div>
-
-          <div class="about-value-item">
-            <div class="about-value-icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></svg>
-            </div>
-            <div class="about-value-text">
-              <strong>Audiovisual &amp; Design de Alto Padrão</strong>
-              <span>Identidade visual marcante e produções que elevam imediatamente a autoridade percebida da sua marca.</span>
-            </div>
-          </div>
-
-          <div class="about-value-item">
-            <div class="about-value-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg>
-            </div>
-            <div class="about-value-text">
-              <strong>Agilidade com Inteligência Artificial</strong>
-              <span>Autonomia criativa, inovação prática e processos organizados para entregas rigorosas no prazo.</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Linha de Ação & Fechamento com Gatilho de Disponibilidade -->
-        <div class="about-action-row">
-          <a class="btn btn-primary about-action-btn" href="https://wa.me/5592984195456?text=Ol%C3%A1%2C%20Ianca!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">
-            Falar com Ianca
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <div class="about-badge-status">
-            <span class="status-pulse-dot"></span>
-            <span>Disponível para novos projetos</span>
-          </div>
         </div>
       </div>
 
-      <!-- Coluna Direita: Foto em Destaque Absoluto (Sem Obstruções) -->
+      <!-- Coluna Direita: Foto em Destaque Livre e Cinematográfico (Sem Caixa) -->
       <div class="about-media-col reveal">
-        <div class="about-portrait-card">
-          <!-- Aura luminosa suave de estúdio -->
-          <div class="about-portrait-aura"></div>
+        <div class="about-hero-portrait">
+          <!-- Halo e luz ambiente cinematográfica de estúdio -->
+          <div class="about-halo-glow"></div>
+          <div class="about-halo-ring"></div>
 
-          <!-- Imagem de Perfil sem nenhum badge ou card tapando o corpo/rosto -->
-          <div class="about-portrait-frame">
-            <img class="about-portrait-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Estratégia de Marketing e Audiovisual" width="946" height="1967" loading="eager" decoding="async">
+          <!-- Silhueta em destaque livre, sem caixas ou bordas -->
+          <div class="about-portrait-stage">
+            <img class="about-cutout-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Estratégia de Marketing e Audiovisual" width="946" height="1967" loading="eager" decoding="async">
           </div>
-
-          <!-- Suave base de aterramento em degradê -->
-          <div class="about-portrait-ground"></div>
         </div>
       </div>
     </div>
