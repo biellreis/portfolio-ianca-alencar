@@ -182,13 +182,12 @@ a {
 .ambient-glow {
   position: absolute;
   border-radius: 50%;
-  filter: blur(180px);
-  opacity: 0.06;
+  pointer-events: none;
 }
 .glow-1 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(229, 152, 168, 0.3), transparent 70%);
+  background: radial-gradient(circle, rgba(229, 152, 168, 0.07) 0%, rgba(229, 152, 168, 0.02) 42%, transparent 70%);
   top: -240px;
   left: 50%;
   transform: translateX(-50%);
@@ -196,14 +195,14 @@ a {
 .glow-2 {
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(182, 154, 201, 0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(182, 154, 201, 0.05) 0%, rgba(182, 154, 201, 0.015) 42%, transparent 70%);
   bottom: 20%;
   right: -150px;
 }
 .glow-3 {
   width: 650px;
   height: 650px;
-  background: radial-gradient(circle, rgba(235, 211, 190, 0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(235, 211, 190, 0.05) 0%, rgba(235, 211, 190, 0.015) 42%, transparent 70%);
   top: 45%;
   left: -150px;
 }
@@ -410,7 +409,6 @@ a {
   padding-left: 0.02em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  will-change: background-position;
 }
 .apple-title-rose {
   background: linear-gradient(
@@ -433,7 +431,6 @@ a {
   padding-left: 0.02em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  will-change: background-position;
 }
 .apple-title-cyan {
   background: linear-gradient(
@@ -456,7 +453,6 @@ a {
   padding-left: 0.02em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  will-change: background-position;
 }
 .apple-title-gold {
   background: linear-gradient(
@@ -479,7 +475,17 @@ a {
   padding-left: 0.02em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  will-change: background-position;
+}
+
+@media (max-width: 992px) {
+  .apple-title-gradient,
+  .apple-title-rose,
+  .apple-title-cyan,
+  .apple-title-gold {
+    background-size: 100% 100% !important;
+    animation: none !important;
+    will-change: auto !important;
+  }
 }
 .apple-section-sub {
   font-size: clamp(15px, 1.4vw, 19px);
@@ -1096,7 +1102,6 @@ a {
   z-index: 2;
   width: max-content;
   transform: translateX(0);
-  will-change: transform;
   touch-action: pan-y;
 }
 
@@ -1113,7 +1118,6 @@ a {
   transform-origin: 50% 125%;
   transition: border-color 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple);
   cursor: pointer;
-  will-change: transform, opacity;
 }
 .arc-card:hover {
   border-color: rgba(255, 255, 255, 0.24);
@@ -1428,6 +1432,36 @@ a {
 }
 @media (max-width: 580px) {
   .spec-cards-grid { grid-template-columns: 1fr; }
+}
+
+/* Mobile Performance Optimization for Arc Carousels & Cards */
+@media (max-width: 992px) {
+  .arc-stage {
+    perspective: 1200px;
+  }
+  .arc-card,
+  .arc-badge,
+  .arc-card.arc-info-card,
+  .arc-info-pill {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  .arc-card {
+    box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.6) !important;
+  }
+  .contact-card {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(20, 14, 28, 0.98) !important;
+  }
+}
+
+/* Content Visibility: Defer layout & painting of heavy offscreen sections */
+.strategy-section,
+.case-section,
+.contact-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 850px;
 }
 
 /* ==========================================================================
@@ -1912,7 +1946,7 @@ footer {
           <div class="about-portrait-stage">
             <picture class="about-cutout-picture">
               <source srcset="assets/perfil-ianca.webp" type="image/webp">
-              <img class="about-cutout-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Estratégia de Marketing e Audiovisual" width="946" height="1967" loading="eager" fetchpriority="high" decoding="async">
+              <img class="about-cutout-img" src="assets/perfil-ianca.webp" alt="Ianca Alencar — Estratégia de Marketing e Audiovisual" width="946" height="1967" loading="eager" fetchpriority="high" decoding="async">
             </picture>
           </div>
         </div>
@@ -2211,12 +2245,10 @@ footer {
       <div class="arc-track">
         
         <!-- Reel 1: Aulão Presencial Manaus -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DPmZD-pjpeJ/" data-title="Aulão Presencial — SEMED Manaus" data-badge="Aulão Manaus" data-caption="Cobertura com energia contagiante reunindo milhares de estudantes">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DPmZD-pjpeJ/" data-video-src="assets/videos/ig_aulao.mp4" data-title="Aulão Presencial — SEMED Manaus" data-badge="Aulão Manaus" data-caption="Cobertura com energia contagiante reunindo milhares de estudantes">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_aulao.jpg">
-                <source data-src="assets/videos/ig_aulao.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_aulao.jpg" alt="Aulão Presencial — SEMED Manaus" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Aulão Manaus</span>
@@ -2233,12 +2265,10 @@ footer {
         </article>
 
         <!-- Reel 2: Lançamento João Pessoa -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DVEFdSNDpJL/" data-title="Lançamento Super Ensino — João Pessoa" data-badge="Lançamento JP" data-caption="Recepção calorosa para 200 professores e lideranças educacionais">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DVEFdSNDpJL/" data-video-src="assets/videos/ig_joao_pessoa.mp4" data-title="Lançamento Super Ensino — João Pessoa" data-badge="Lançamento JP" data-caption="Recepção calorosa para 200 professores e lideranças educacionais">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_joao_pessoa.jpg">
-                <source data-src="assets/videos/ig_joao_pessoa.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_joao_pessoa.jpg" alt="Lançamento Super Ensino — João Pessoa" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Lançamento JP</span>
@@ -2255,12 +2285,10 @@ footer {
         </article>
 
         <!-- Reel 3: PremiAstro 600 Pessoas -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DSJR8OHDmfh/" data-title="PremiAstro — Celebração Anual Super Ensino" data-badge="PremiAstro · 600 Pessoas" data-caption="Premiação com palco iluminado e clima de celebração inesquecível">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DSJR8OHDmfh/" data-video-src="assets/videos/ig_premiastro.mp4" data-title="PremiAstro — Celebração Anual Super Ensino" data-badge="PremiAstro · 600 Pessoas" data-caption="Premiação com palco iluminado e clima de celebração inesquecível">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_premiastro.jpg">
-                <source data-src="assets/videos/ig_premiastro.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_premiastro.jpg" alt="PremiAstro — Celebração Anual Super Ensino" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">PremiAstro · 600 Pessoas</span>
@@ -2277,12 +2305,10 @@ footer {
         </article>
 
         <!-- Reel 4: Viradão de Estudos -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DPrOV72DhB7/" data-title="Viradão de Estudos — SEMED Manaus" data-badge="8k Alunos" data-caption="Ação educativa marcante conectando escolas e estudantes">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DPrOV72DhB7/" data-video-src="assets/videos/ig_viradao.mp4" data-title="Viradão de Estudos — SEMED Manaus" data-badge="8k Alunos" data-caption="Ação educativa marcante conectando escolas e estudantes">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_viradao.jpg">
-                <source data-src="assets/videos/ig_viradao.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_viradao.jpg" alt="Viradão de Estudos — SEMED Manaus" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">8k Alunos</span>
@@ -2299,12 +2325,10 @@ footer {
         </article>
 
         <!-- Reel 5: Professores em Destaque -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DM1BsG9vdgX/" data-title="Professores em Destaque" data-badge="Histórias Reais" data-caption="Valorização dos professores com histórias autênticas e acolhedoras">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DM1BsG9vdgX/" data-video-src="assets/videos/ig_professores.mp4" data-title="Professores em Destaque" data-badge="Histórias Reais" data-caption="Valorização dos professores com histórias autênticas e acolhedoras">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_professores.jpg">
-                <source data-src="assets/videos/ig_professores.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_professores.jpg" alt="Professores em Destaque" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Histórias Reais</span>
@@ -2321,12 +2345,10 @@ footer {
         </article>
 
         <!-- Reel 6: Bastidores da Criação -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DQ9dVa3DswU/" data-title="Bastidores da Criação" data-badge="Bastidores" data-caption="O carinho e o cuidado em cada gravação do time">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DQ9dVa3DswU/" data-video-src="assets/videos/ig_bastidores.mp4" data-title="Bastidores da Criação" data-badge="Bastidores" data-caption="O carinho e o cuidado em cada gravação do time">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_bastidores.jpg">
-                <source data-src="assets/videos/ig_bastidores.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_bastidores.jpg" alt="Bastidores da Criação" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Bastidores</span>
@@ -2380,12 +2402,10 @@ footer {
       <div class="arc-track">
         
         <!-- Event 1: Lançamento João Pessoa -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DVEFdSNDpJL/" data-title="Lançamento Super Ensino em João Pessoa" data-badge="Lançamento JP" data-caption="Evento institucional para 200 professores e autoridades">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DVEFdSNDpJL/" data-video-src="assets/videos/event_joao_pessoa.mp4" data-title="Lançamento Super Ensino em João Pessoa" data-badge="Lançamento JP" data-caption="Evento institucional para 200 professores e autoridades">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_joao_pessoa.jpg">
-                <source data-src="assets/videos/event_joao_pessoa.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_joao_pessoa.jpg" alt="Lançamento Super Ensino em João Pessoa" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Lançamento JP</span>
@@ -2402,12 +2422,10 @@ footer {
         </article>
 
         <!-- Event 2: PremiAstro Super Ensino -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DSYZ52tDpM-/" data-title="PremiAstro — Premiação Super Ensino" data-badge="PremiAstro" data-caption="Premiação corporativa com 600 participantes">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DSYZ52tDpM-/" data-video-src="assets/videos/event_premiastro.mp4" data-title="PremiAstro — Premiação Super Ensino" data-badge="PremiAstro" data-caption="Premiação corporativa com 600 participantes">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_premiastro.jpg">
-                <source data-src="assets/videos/event_premiastro.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_premiastro.jpg" alt="PremiAstro — Premiação Super Ensino" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">PremiAstro</span>
@@ -2424,12 +2442,10 @@ footer {
         </article>
 
         <!-- Event 3: Viradão SAEB Manaus -->
-        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DP1ad-ODlV7/" data-title="Viradão SAEB — SEMED Manaus" data-badge="Viradão SAEB" data-caption="Ação educacional com mais de 8.000 alunos">
+        <article class="arc-card" data-type="instagram" data-video-url="https://www.instagram.com/p/DP1ad-ODlV7/" data-video-src="assets/videos/event_viradao.mp4" data-title="Viradão SAEB — SEMED Manaus" data-badge="Viradão SAEB" data-caption="Ação educacional com mais de 8.000 alunos">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_viradao.jpg">
-                <source data-src="assets/videos/event_viradao.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_viradao.jpg" alt="Viradão SAEB — SEMED Manaus" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Viradão SAEB</span>
@@ -2449,9 +2465,7 @@ footer {
         <article class="arc-card" data-type="youtube" data-video-url="_jN83hKXuTM" data-video-src="assets/videos/live_viradao_hd.mp4" data-title="Transmissão ao Vivo 2 Dias — Viradão Super Ensino" data-badge="Live · 2 Dias" data-caption="Transmissão ao vivo com direção técnica completa">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_live.jpg">
-                <source data-src="assets/videos/event_live.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_live.jpg" alt="Transmissão ao Vivo 2 Dias — Viradão Super Ensino" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Live · 2 Dias</span>
@@ -2531,12 +2545,10 @@ footer {
       <div class="arc-track">
         
         <!-- YT 1 -->
-        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="yEaPOlmspDI" data-title="Super Ensino — Inclusão e Conectividade" data-badge="Vídeo Oficial" data-caption="Apresentação em alta definição sobre o futuro da educação digital">
+        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="yEaPOlmspDI" data-video-src="assets/videos/yt_inclusao.mp4" data-title="Super Ensino — Inclusão e Conectividade" data-badge="Vídeo Oficial" data-caption="Apresentação em alta definição sobre o futuro da educação digital">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="https://i.ytimg.com/vi/yEaPOlmspDI/maxresdefault.jpg">
-                <source data-src="assets/videos/yt_inclusao.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_yt_inclusao.jpg" alt="Super Ensino — Inclusão e Conectividade" loading="lazy" decoding="async" width="620" height="360">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Vídeo Oficial</span>
@@ -2556,9 +2568,7 @@ footer {
         <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="XrLNVvlOlrU" data-video-src="assets/videos/yt_aulao_5ano_hd.mp4" data-title="Aulão SAEB 5º Ano — Transmissão Ao Vivo" data-badge="Live · Ao Vivo" data-caption="Transmissão ao vivo com direção técnica e produção audiovisual">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_yt_5ano.jpg">
-                <source data-src="assets/videos/yt_aulao_saeb.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_yt_5ano.jpg" alt="Aulão SAEB 5º Ano — Transmissão Ao Vivo" loading="lazy" decoding="async" width="620" height="360">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Transmissão Ao Vivo</span>
@@ -2575,12 +2585,10 @@ footer {
         </article>
 
         <!-- YT 3 -->
-        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="PxFWjh2ZCoI" data-title="Portal da Super Ensino — Soluções Digitais" data-badge="Soluções Digitais" data-caption="Apresentação das soluções tecnológicas">
+        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="PxFWjh2ZCoI" data-video-src="assets/videos/yt_portal.mp4" data-title="Portal da Super Ensino — Soluções Digitais" data-badge="Soluções Digitais" data-caption="Apresentação das soluções tecnológicas">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="https://i.ytimg.com/vi/PxFWjh2ZCoI/maxresdefault.jpg">
-                <source data-src="assets/videos/yt_portal.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_yt_portal.jpg" alt="Portal da Super Ensino — Soluções Digitais" loading="lazy" decoding="async" width="620" height="360">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Soluções Digitais</span>
@@ -2597,12 +2605,10 @@ footer {
         </article>
 
         <!-- YT 4 -->
-        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="PWyqmtj5CQQ" data-title="Simulado SAEB — Língua Portuguesa" data-badge="Aulas Práticas" data-caption="Produção didática com alta retenção">
+        <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="PWyqmtj5CQQ" data-video-src="assets/videos/yt_simulado.mp4" data-title="Simulado SAEB — Língua Portuguesa" data-badge="Aulas Práticas" data-caption="Produção didática com alta retenção">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="https://i.ytimg.com/vi/PWyqmtj5CQQ/maxresdefault.jpg">
-                <source data-src="assets/videos/yt_simulado.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_yt_simulado.jpg" alt="Simulado SAEB — Língua Portuguesa" loading="lazy" decoding="async" width="620" height="360">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Aulas Práticas</span>
@@ -2622,9 +2628,7 @@ footer {
         <article class="arc-card arc-card-wide" data-type="youtube" data-video-url="5io-NyeaDEo" data-video-src="assets/videos/yt_aulao_manaus_hd.mp4" data-title="Aulão SAEB Ao Vivo — Parceria SEMED" data-badge="SEMED Manaus" data-caption="Transmissão ao vivo em larga escala">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_yt_manaus.jpg">
-                <source data-src="assets/videos/yt_viradao.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_yt_manaus.jpg" alt="Aulão SAEB Ao Vivo — Parceria SEMED" loading="lazy" decoding="async" width="620" height="360">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Transmissão SEMED</span>
@@ -2681,9 +2685,7 @@ footer {
         <article class="arc-card" data-type="tiktok" data-video-url="https://www.tiktok.com/@superensino/video/6919093359013367045" data-video-src="assets/videos/tiktok_experimento_hd.mp4" data-title="Experimento na Sala — Viral TikTok" data-badge="Viral · 509.6k" data-caption="Mais de 509 mil visualizações orgânicas">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_tiktok_experimento.jpg">
-                <source data-src="assets/videos/tiktok_experimento.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_tiktok_experimento.jpg" alt="Experimento na Sala — Viral TikTok" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Viral · 509.6k</span>
@@ -2703,9 +2705,7 @@ footer {
         <article class="arc-card" data-type="tiktok" data-video-url="https://www.tiktok.com/@superensino/video/7676162416136293653" data-video-src="assets/videos/tiktok_rotina_hd.mp4" data-title="Dia a Dia dos Professores — Rotina Escolar" data-badge="Dia a Dia" data-caption="Identificação com estudantes e rotina escolar">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_tiktok_rotina.jpg">
-                <source data-src="assets/videos/tiktok_rotina.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_tiktok_rotina.jpg" alt="Dia a Dia dos Professores — Rotina Escolar" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Dia a Dia</span>
@@ -2725,9 +2725,7 @@ footer {
         <article class="arc-card" data-type="tiktok" data-video-url="https://www.tiktok.com/@superensino/video/7673232902833949972" data-video-src="assets/videos/tiktok_consolida_hd.mp4" data-title="Clipe Consolida+ — Hit Musical" data-badge="Consolida+" data-caption="Clipe musical exclusivo e envolvente para o projeto Consolida+">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_tiktok_consolida.jpg">
-                <source data-src="assets/videos/tiktok_consolida.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_tiktok_consolida.jpg" alt="Clipe Consolida+ — Hit Musical" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Consolida+</span>
@@ -2747,9 +2745,7 @@ footer {
         <article class="arc-card" data-type="tiktok" data-video-url="https://www.tiktok.com/@superensino/video/7673950761528708359" data-video-src="assets/videos/tiktok_visitas_hd.mp4" data-title="Super Visitas — Conexão com Escolas" data-badge="Super Visitas" data-caption="Presença nas escolas com os SuperProfessores">
           <div class="arc-card-inner">
             <div class="arc-media-box">
-              <video class="arc-card-video" muted loop playsinline preload="none" poster="assets/videos/poster_tiktok_visitas.jpg">
-                <source data-src="assets/videos/tiktok_visitas.mp4" type="video/mp4">
-              </video>
+              <img class="arc-card-media" src="assets/videos/poster_tiktok_visitas.jpg" alt="Super Visitas — Conexão com Escolas" loading="lazy" decoding="async" width="370" height="560">
               <div class="arc-overlay"></div>
             </div>
             <span class="arc-badge">Super Visitas</span>
@@ -3305,7 +3301,6 @@ footer {
         this.requestRender();
       }
       this.updateUI();
-      this.syncVideos();
     }
     
     updateUI() {
@@ -3322,42 +3317,6 @@ footer {
         const dots = this.dotsContainer.querySelectorAll(".arc-dot");
         dots.forEach((d, i) => d.classList.toggle("is-active", i === this.currentIndex));
       }
-    }
-
-    syncVideos() {
-      if (!this.isInViewport) {
-        this.pauseAllVideos();
-        return;
-      }
-      this.cards.forEach((card, i) => {
-        const video = card.querySelector("video");
-        if (!video) return;
-        // Play active center card video, pause others
-        if (i === this.currentIndex) {
-          const source = video.querySelector("source[data-src]");
-          if (source) {
-            source.src = source.dataset.src;
-            source.removeAttribute("data-src");
-            video.load();
-          }
-          video.muted = true;
-          const p = video.play();
-          if (p !== undefined) p.catch(function() {});
-        } else {
-          if (!video.paused) {
-            video.pause();
-          }
-        }
-      });
-    }
-
-    pauseAllVideos() {
-      this.cards.forEach((card) => {
-        const video = card.querySelector("video");
-        if (video && !video.paused) {
-          video.pause();
-        }
-      });
     }
     
     requestRender() {
@@ -3415,31 +3374,11 @@ footer {
     carousels.push(c);
   });
 
-  // Smart Section Observer for 60fps Mobile Performance & Instant Initial Load
-  if ("IntersectionObserver" in window) {
-    const secObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        const carouselEl = entry.target.querySelector("[data-arc-carousel]");
-        if (carouselEl && carouselEl.__arcCarouselInstance) {
-          carouselEl.__arcCarouselInstance.isInViewport = entry.isIntersecting;
-          carouselEl.__arcCarouselInstance.syncVideos();
-        }
-      });
-    }, { rootMargin: "150px 0px" });
-
-    document.querySelectorAll(".case-section, .strategy-section").forEach(function(sec) {
-      secObserver.observe(sec);
-    });
-  }
-
   document.addEventListener("visibilitychange", function() {
-    carousels.forEach(function(c) {
-      if (document.hidden) {
-        c.pauseAllVideos();
-      } else {
-        c.syncVideos();
-      }
-    });
+    if (document.hidden && modalEl && modalEl.classList.contains("is-open")) {
+      const v = modalPlayer ? modalPlayer.querySelector("video") : null;
+      if (v && !v.paused) v.pause();
+    }
   });
 })();
 </script>
