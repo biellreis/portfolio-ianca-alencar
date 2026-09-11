@@ -561,18 +561,17 @@ a {
 .hero-desc {
   font-size: clamp(16px, 1.5vw, 20px);
   font-weight: 400;
-  line-height: 1.58;
+  line-height: 1.6;
   color: var(--text-secondary);
-  max-width: 680px;
-  margin: 24px auto 36px;
-  text-wrap: pretty;
+  max-width: 780px;
+  margin: 24px auto 44px;
+  text-wrap: balance;
 }
-.hero-actions-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
+.desktop-br {
+  display: inline;
+}
+@media (max-width: 768px) {
+  .desktop-br { display: none; }
 }
 
 /* Hero Spec Bar */
@@ -627,7 +626,278 @@ a {
 }
 
 /* ==========================================================================
-   02. STRATEGY & CAPABILITIES SECTION (3D Arc Deck Carousel)
+   02. ABOUT SECTION (Executive Profile & Editorial Story)
+   ========================================================================== */
+.about-section {
+  padding: clamp(80px, 9vw, 140px) 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-glass-bright), transparent);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(36px, 5vw, 72px);
+  align-items: center;
+}
+.about-header {
+  margin-bottom: 28px;
+}
+.about-bio-body {
+  font-size: clamp(15px, 1.2vw, 16.5px);
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+.about-bio-body p + p {
+  margin-top: 16px;
+}
+.about-bio-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.about-lead {
+  font-size: clamp(17px, 1.4vw, 20px) !important;
+  line-height: 1.62 !important;
+  color: var(--text-primary) !important;
+  font-weight: 400;
+}
+.about-quote-box {
+  margin: 26px 0 28px;
+  padding: 18px 22px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(229, 152, 168, 0.08) 0%, rgba(182, 154, 201, 0.04) 100%);
+  border: 1px solid rgba(229, 152, 168, 0.22);
+  border-left: 4px solid var(--accent-rose);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.about-quote-icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--accent-rose);
+  flex-shrink: 0;
+  margin-top: 3px;
+  opacity: 0.9;
+}
+.about-quote-text {
+  font-size: 15px;
+  font-style: italic;
+  color: #FAF6F8 !important;
+  line-height: 1.55;
+  margin: 0 !important;
+  font-weight: 500;
+}
+.about-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 26px;
+}
+.about-pillar-card {
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: rgba(24, 18, 30, 0.65);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: border-color 0.3s var(--ease-apple), transform 0.3s var(--ease-apple), background-color 0.3s;
+}
+.about-pillar-card:hover {
+  border-color: rgba(229, 152, 168, 0.35);
+  background: rgba(34, 25, 42, 0.85);
+  transform: translateY(-3px);
+}
+.about-pillar-num {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--accent-rose);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+  font-family: var(--font-display);
+}
+.about-pillar-info h4 {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+  letter-spacing: -0.01em;
+}
+.about-pillar-info p {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.48;
+  margin: 0;
+}
+
+/* Prominent Portrait Card */
+.about-portrait-card {
+  position: relative;
+  border-radius: 36px;
+  background: radial-gradient(circle at 50% 25%, rgba(42, 30, 56, 0.65) 0%, rgba(14, 11, 19, 0.95) 75%);
+  border: 1px solid var(--border-glass-bright);
+  box-shadow: var(--shadow-card), 0 0 60px rgba(229, 152, 168, 0.08);
+  overflow: hidden;
+  padding: 36px 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 580px;
+  transition: border-color 0.4s var(--ease-apple), box-shadow 0.4s var(--ease-apple);
+}
+.about-portrait-card:hover {
+  border-color: rgba(229, 152, 168, 0.38);
+  box-shadow: var(--shadow-card-hover), 0 0 80px rgba(229, 152, 168, 0.16);
+}
+.about-portrait-aura {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(229, 152, 168, 0.32) 0%, rgba(182, 154, 201, 0.18) 45%, transparent 72%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 0;
+}
+.about-portrait-frame {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.about-portrait-img {
+  width: 100%;
+  height: auto;
+  max-height: 580px;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.8)) drop-shadow(0 4px 14px rgba(229, 152, 168, 0.15));
+  transition: transform 0.5s var(--ease-apple);
+  pointer-events: auto;
+}
+.about-portrait-card:hover .about-portrait-img {
+  transform: scale(1.02) translateY(-4px);
+}
+.about-badge-top {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 16px;
+  border-radius: 9999px;
+  background: rgba(18, 14, 24, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-glass-bright);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent-rose-soft);
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+.about-badge-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ADE80;
+  box-shadow: 0 0 10px #4ADE80;
+}
+.about-caption-card {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  right: 22px;
+  z-index: 2;
+  padding: 18px 22px;
+  border-radius: 22px;
+  background: rgba(16, 12, 22, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
+}
+.about-caption-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FAF6F8;
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+.about-caption-role {
+  font-size: 12.5px;
+  color: var(--accent-rose-soft);
+  margin-top: 3px;
+  font-weight: 500;
+}
+.about-caption-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.about-caption-tags span {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+}
+@media (max-width: 980px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .about-media-col {
+    order: -1;
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .about-portrait-card {
+    min-height: 480px;
+  }
+  .about-portrait-img {
+    max-height: 460px;
+  }
+}
+@media (max-width: 600px) {
+  .about-pillars {
+    grid-template-columns: 1fr;
+  }
+  .about-caption-card {
+    position: static;
+    margin: 16px 0 0;
+    width: 100%;
+  }
+  .about-portrait-card {
+    padding-bottom: 20px;
+  }
+}
+
+/* ==========================================================================
+   03. STRATEGY & CAPABILITIES SECTION (3D Arc Deck Carousel)
    ========================================================================== */
 .strategy-section {
   padding: clamp(80px, 10vw, 150px) 0;
@@ -1647,6 +1917,7 @@ footer {
     </a>
     <ul class="apple-links">
       <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#estrategia">Estratégia</a></li>
       <li><a href="#case-instagram">Instagram</a></li>
       <li><a href="#eventos">Eventos</a></li>
       <li><a href="#plataformas">YouTube</a></li>
@@ -1668,18 +1939,8 @@ footer {
     </h1>
     
     <p class="hero-desc reveal">
-      Cases comprovados de ponta a ponta: do planejamento à criação de vídeos e grandes experiências que conectam milhares de pessoas e geram crescimento&nbsp;sustentável.
+      Cases comprovados de ponta a ponta: do planejamento à criação de vídeos e grandes<br class="desktop-br">experiências que conectam milhares de pessoas e geram crescimento sustentável.
     </p>
-    
-    <div class="hero-actions-group reveal">
-      <a class="btn btn-primary" href="#sobre">
-        Conhecer Minha Estratégia
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a class="btn btn-glass" href="#case-instagram">
-        Ver Cases em Vídeo
-      </a>
-    </div>
 
     <!-- Hero Spec Bar -->
     <div class="hero-specs reveal">
@@ -1704,9 +1965,112 @@ footer {
 </header>
 
 <!-- ==========================================================================
-     02. ESTRATÉGIA COMPROVADA NA PRÁTICA (3D ARC DECK CAROUSEL)
+     02. SOBRE MIM (Perfil & Trajetória — Ianca Alencar)
      ========================================================================== -->
-<section class="strategy-section" id="sobre">
+<section class="about-section" id="sobre">
+  <div class="wrap">
+    <div class="about-grid">
+      <!-- Coluna Esquerda: Texto Diagramado & Trajetória -->
+      <div class="about-content reveal">
+        <div class="about-header">
+          <span class="apple-eyebrow">
+            <span class="apple-eyebrow-accent">Sobre Mim</span> · Perfil &amp; Trajetória
+          </span>
+          <h2 class="apple-section-title">
+            Estratégia, criatividade e visão:<br>
+            <span class="apple-title-gradient">construindo narrativas que conectam.</span>
+          </h2>
+        </div>
+
+        <div class="about-bio-body">
+          <p class="about-lead">
+            Me chamo <strong>Ianca Alencar</strong> e sou apaixonada por tudo que envolve imagem, criação e contar histórias de forma visual.
+          </p>
+          <p>
+            Minha trajetória teve início na fotografia em 2019, passando pela fotografia política e pela gerência de produção em estúdio audiovisual.
+          </p>
+          <p>
+            Hoje, atuo com <strong>gestão de marketing</strong>, abrangendo planejamento de conteúdo para redes sociais, criação de roteiros, desenvolvimento de campanhas e gestão de eventos.
+          </p>
+          <p>
+            Trabalho também com <strong>design gráfico e editorial</strong>, unindo autonomia criativa, visão estratégica de negócios e o uso prático de <strong>Inteligência Artificial</strong>. Como estudante de <strong>Publicidade e Propaganda no IFAM</strong>, busco constantemente traduzir ideias em identidades visuais marcantes e estratégias de comunicação que geram conexão real.
+          </p>
+          <div class="about-quote-box">
+            <svg class="about-quote-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+            <p class="about-quote-text">
+              “Gosto de desafios, de experimentar coisas novas e de transformar conceitos em algo visualmente impactante.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Grade Diagramada de Competências -->
+        <div class="about-pillars">
+          <div class="about-pillar-card">
+            <div class="about-pillar-num">01</div>
+            <div class="about-pillar-info">
+              <h4>Fotografia &amp; Produção</h4>
+              <p>Experiência desde 2019, fotografia política e gestão de estúdio audiovisual.</p>
+            </div>
+          </div>
+          <div class="about-pillar-card">
+            <div class="about-pillar-num">02</div>
+            <div class="about-pillar-info">
+              <h4>Marketing &amp; Eventos</h4>
+              <p>Planejamento de conteúdo, criação de roteiros, campanhas e gestão de eventos.</p>
+            </div>
+          </div>
+          <div class="about-pillar-card">
+            <div class="about-pillar-num">03</div>
+            <div class="about-pillar-info">
+              <h4>Design Gráfico &amp; IA</h4>
+              <p>Design editorial, identidades visuais marcantes e inovação com IA.</p>
+            </div>
+          </div>
+          <div class="about-pillar-card">
+            <div class="about-pillar-num">04</div>
+            <div class="about-pillar-info">
+              <h4>Formação Publicitária</h4>
+              <p>Graduanda em Publicidade e Propaganda pelo IFAM com foco em resultados reais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Imagem de Destaque Grande -->
+      <div class="about-media-col reveal">
+        <div class="about-portrait-card">
+          <!-- Aura luminosa suave em degradê -->
+          <div class="about-portrait-aura"></div>
+          <div class="about-portrait-frame">
+            <img class="about-portrait-img" src="PERFIL-IANCA.png" alt="Ianca Alencar — Perfil Profissional" width="946" height="1967" loading="eager" decoding="async">
+          </div>
+
+          <!-- Badge flutuante IFAM -->
+          <div class="about-badge-top">
+            <span class="about-badge-pulse"></span>
+            <span>IFAM · Publicidade e Propaganda</span>
+          </div>
+
+          <!-- Card de identificação executiva -->
+          <div class="about-caption-card">
+            <div class="about-caption-name">Ianca Alencar</div>
+            <div class="about-caption-role">Gestão de Marketing · Audiovisual · Design</div>
+            <div class="about-caption-tags">
+              <span>Estratégia</span>
+              <span>Direção Criativa</span>
+              <span>Eventos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     03. ESTRATÉGIA COMPROVADA NA PRÁTICA (3D ARC DECK CAROUSEL)
+     ========================================================================== -->
+<section class="strategy-section" id="estrategia">
   <div class="wrap">
     <div class="apple-head-wrap reveal">
       <div>
